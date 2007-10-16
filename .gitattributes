@@ -201,6 +201,7 @@ JGE/JGE/Makefile -text
 JGE/JGE/Makefile.1xx -text
 JGE/JGE/Makefile.3xx -text
 JGE/JGE/Makefile.hge -text
+JGE/JGE/Makefile.input -text
 JGE/JGE/Release/BuildLog.htm -text
 JGE/JGE/include/Encoding.h -text
 JGE/JGE/include/JAnimator.h -text
