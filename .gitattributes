@@ -196,7 +196,7 @@ JGE/JGE/JGE.sln -text
 JGE/JGE/JGE.suo -text
 JGE/JGE/JGE.vcproj -text
 JGE/JGE/JGE.vcproj.BEDROOM.Jasmine.user -text
-JGE/JGE/JGE.vcproj.MOMO.jamesh.user -text
+JGE/JGE/JGE.vcproj.user -text
 JGE/JGE/LICENSE -text
 JGE/JGE/Makefile -text
 JGE/JGE/Makefile.1xx -text
@@ -345,8 +345,6 @@ JGE/JGE/lib/psp/libmikmod.a -text
 JGE/JGE/lib/psp/libpng.a -text
 JGE/JGE/lib/psp/libz.a -text
 JGE/JGE/lib/win/jge_debug.lib -text
-JGE/JGE/libhgetools.a -text
-JGE/JGE/libjge.a -text
 JGE/JGE/mk.bat -text
 JGE/JGE/readme.txt -text
 JGE/JGE/src/Encoding.cpp -text
