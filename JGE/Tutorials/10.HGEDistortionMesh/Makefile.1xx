@@ -1,0 +1,17 @@
+TARGET = HGEDistortionMesh
+OBJS = src/GameApp.o src/GameLauncher.o 
+
+CFLAGS = -O2 -G0 -Wall 
+CXXFLAGS = $(CFLAGS) -fno-exceptions -fno-rtti
+ASFLAGS = $(CXXFLAGS)
+
+INCDIR = ../../JGE/include ../../JGE/include/psp ../../JGE/include/psp/freetype2 ../../JGE/src
+LIBDIR = ../../JGE/lib/psp
+LDFLAGS =
+LIBS = -lhgetools -ljge -lgif -lfreetype -ljpeg -lpng -lz -lm -lmikmod -lpsppower -lpspmpeg -lpspaudiocodec -lpspaudiolib -lpspaudio -lpspgum -lpspgu -lpsprtc -lstdc++ 
+
+EXTRA_TARGETS = EBOOT.PBP
+PSP_EBOOT_TITLE = HGE Distortion Mesh Demo
+
+PSPSDK=$(shell psp-config --pspsdk-path)
+include $(PSPSDK)/lib/build.mak

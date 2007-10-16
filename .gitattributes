@@ -430,6 +430,8 @@ JGE/Tutorials/01.HelloWorld/HelloWorld.vcproj -text
 JGE/Tutorials/01.HelloWorld/HelloWorld.vcproj.user -text
 JGE/Tutorials/01.HelloWorld/LICENSE -text
 JGE/Tutorials/01.HelloWorld/Makefile -text
+JGE/Tutorials/01.HelloWorld/Makefile.1xx -text
+JGE/Tutorials/01.HelloWorld/Makefile.3xx -text
 JGE/Tutorials/01.HelloWorld/bin/HelloWorld.exe -text
 JGE/Tutorials/01.HelloWorld/bin/Res/f3.dat -text
 JGE/Tutorials/01.HelloWorld/bin/Res/f3.png -text
@@ -445,6 +447,8 @@ JGE/Tutorials/02.RenderingImages/Images.vcproj -text
 JGE/Tutorials/02.RenderingImages/Images.vcproj.user -text
 JGE/Tutorials/02.RenderingImages/LICENSE -text
 JGE/Tutorials/02.RenderingImages/Makefile -text
+JGE/Tutorials/02.RenderingImages/Makefile.1xx -text
+JGE/Tutorials/02.RenderingImages/Makefile.3xx -text
 JGE/Tutorials/02.RenderingImages/bin/Images.exe -text
 JGE/Tutorials/02.RenderingImages/bin/Res/bg3.gif -text
 JGE/Tutorials/02.RenderingImages/bin/Res/bg3.jpg -text
@@ -458,6 +462,8 @@ JGE/Tutorials/02.RenderingImages/src/GameApp.h -text
 JGE/Tutorials/02.RenderingImages/src/GameLauncher.cpp -text
 JGE/Tutorials/03.Splines/LICENSE -text
 JGE/Tutorials/03.Splines/Makefile -text
+JGE/Tutorials/03.Splines/Makefile.1xx -text
+JGE/Tutorials/03.Splines/Makefile.3xx -text
 JGE/Tutorials/03.Splines/Splines.sln -text
 JGE/Tutorials/03.Splines/Splines.suo -text
 JGE/Tutorials/03.Splines/Splines.vcproj -text
@@ -475,6 +481,8 @@ JGE/Tutorials/03.Splines/src/GameApp.h -text
 JGE/Tutorials/03.Splines/src/GameLauncher.cpp -text
 JGE/Tutorials/04.ResourceManager/LICENSE -text
 JGE/Tutorials/04.ResourceManager/Makefile -text
+JGE/Tutorials/04.ResourceManager/Makefile.1xx -text
+JGE/Tutorials/04.ResourceManager/Makefile.3xx -text
 JGE/Tutorials/04.ResourceManager/ResourceManager.sln -text
 JGE/Tutorials/04.ResourceManager/ResourceManager.suo -text
 JGE/Tutorials/04.ResourceManager/ResourceManager.vcproj -text
@@ -492,6 +500,8 @@ JGE/Tutorials/04.ResourceManager/src/GameApp.h -text
 JGE/Tutorials/04.ResourceManager/src/GameLauncher.cpp -text
 JGE/Tutorials/05.Shapes/LICENSE -text
 JGE/Tutorials/05.Shapes/Makefile -text
+JGE/Tutorials/05.Shapes/Makefile.1xx -text
+JGE/Tutorials/05.Shapes/Makefile.3xx -text
 JGE/Tutorials/05.Shapes/Shapes.sln -text
 JGE/Tutorials/05.Shapes/Shapes.suo -text
 JGE/Tutorials/05.Shapes/Shapes.vcproj -text
@@ -507,6 +517,8 @@ JGE/Tutorials/05.Shapes/src/GameApp.h -text
 JGE/Tutorials/05.Shapes/src/GameLauncher.cpp -text
 JGE/Tutorials/06.TrueTypeFont/LICENSE -text
 JGE/Tutorials/06.TrueTypeFont/Makefile -text
+JGE/Tutorials/06.TrueTypeFont/Makefile.1xx -text
+JGE/Tutorials/06.TrueTypeFont/Makefile.3xx -text
 JGE/Tutorials/06.TrueTypeFont/TrueTypeFont.sln -text
 JGE/Tutorials/06.TrueTypeFont/TrueTypeFont.suo -text
 JGE/Tutorials/06.TrueTypeFont/TrueTypeFont.vcproj -text
@@ -528,6 +540,8 @@ JGE/Tutorials/07.DisplayingChinese/DisplayingChinese.vcproj -text
 JGE/Tutorials/07.DisplayingChinese/DisplayingChinese.vcproj.user -text
 JGE/Tutorials/07.DisplayingChinese/LICENSE -text
 JGE/Tutorials/07.DisplayingChinese/Makefile -text
+JGE/Tutorials/07.DisplayingChinese/Makefile.1xx -text
+JGE/Tutorials/07.DisplayingChinese/Makefile.3xx -text
 JGE/Tutorials/07.DisplayingChinese/bin/DisplayingChinese.exe -text
 JGE/Tutorials/07.DisplayingChinese/bin/DisplayingChinese_debug.exe -text
 JGE/Tutorials/07.DisplayingChinese/bin/Res/ASC12 -text
@@ -568,6 +582,8 @@ JGE/Tutorials/09.3DPrimer/3D.vcproj -text
 JGE/Tutorials/09.3DPrimer/3D.vcproj.user -text
 JGE/Tutorials/09.3DPrimer/LICENSE -text
 JGE/Tutorials/09.3DPrimer/Makefile -text
+JGE/Tutorials/09.3DPrimer/Makefile.1xx -text
+JGE/Tutorials/09.3DPrimer/Makefile.3xx -text
 JGE/Tutorials/09.3DPrimer/bin/3D.exe -text
 JGE/Tutorials/09.3DPrimer/bin/Res/abarlith.png -text
 JGE/Tutorials/09.3DPrimer/bin/Res/bg.png -text
@@ -596,6 +612,7 @@ JGE/Tutorials/10.HGEDistortionMesh/HGEDistortionMesh.vcproj -text
 JGE/Tutorials/10.HGEDistortionMesh/HGEDistortionMesh.vcproj.user -text
 JGE/Tutorials/10.HGEDistortionMesh/LICENSE -text
 JGE/Tutorials/10.HGEDistortionMesh/Makefile -text
+JGE/Tutorials/10.HGEDistortionMesh/Makefile.1xx -text
 JGE/Tutorials/10.HGEDistortionMesh/Makefile.3xx -text
 JGE/Tutorials/10.HGEDistortionMesh/bin/HGEDistortionMesh.exe -text
 JGE/Tutorials/10.HGEDistortionMesh/bin/Res/3.png -text

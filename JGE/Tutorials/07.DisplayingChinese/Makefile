@@ -1,17 +1,12 @@
-TARGET = Chinese
-OBJS = src/GameApp.o src/GameLauncher.o 
+all:
+	$(MAKE) -f Makefile.1xx SCEkxploit
 
-CFLAGS = -O2 -G0 -Wall 
-CXXFLAGS = $(CFLAGS) -fno-exceptions -fno-rtti
-ASFLAGS = $(CXXFLAGS)
+1xx:
+	$(MAKE) -f Makefile.1xx SCEkxploit
 
-INCDIR = ../../JGE/include ../../JGE/include/psp ../../JGE/include/psp/freetype2 ../../JGE/src
-LIBDIR = ../../JGE/lib/psp
-LDFLAGS =
-LIBS = -ljge -lfreetype -ljpeg -lpng -lz -lm -lmikmod -lpsppower -lpspmpeg -lpspaudiocodec -lpspaudiolib -lpspaudio -lpspgum -lpspgu -lpsprtc -lstdc++ 
+3xx:
+	$(MAKE) -f Makefile.3xx
 
-EXTRA_TARGETS = EBOOT.PBP
-PSP_EBOOT_TITLE = JGE++ Chinese Demo
-
-PSPSDK=$(shell psp-config --pspsdk-path)
-include $(PSPSDK)/lib/build.mak
+clean:
+	$(MAKE) -f Makefile.1xx clean
+	$(MAKE) -f Makefile.3xx clean
