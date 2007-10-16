@@ -460,6 +460,7 @@ JGE/JGE/lib/psp/libgif.a -text
 JGE/JGE/lib/psp/libhgetools.a -text
 JGE/JGE/lib/psp/libjge.a -text
 JGE/JGE/lib/psp/libjgeutils.a -text
+JGE/JGE/lib/psp/libjinput.a -text
 JGE/JGE/lib/psp/libjpeg.a -text
 JGE/JGE/lib/psp/libmikmod.a -text
 JGE/JGE/lib/psp/libpng.a -text
