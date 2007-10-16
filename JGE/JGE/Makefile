@@ -3,7 +3,7 @@ all:
 	$(MAKE) -f Makefile.hge install
 	$(MAKE) -f Makefile.input install
 
-150:
+1xx:
 	$(MAKE) -f Makefile.1xx install
 	$(MAKE) -f Makefile.hge install
 	$(MAKE) -f Makefile.input install
