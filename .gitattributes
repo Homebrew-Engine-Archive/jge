@@ -345,7 +345,6 @@ JGE/JGE/lib/psp/libmikmod.a -text
 JGE/JGE/lib/psp/libpng.a -text
 JGE/JGE/lib/psp/libz.a -text
 JGE/JGE/lib/win/jge_debug.lib -text
-JGE/JGE/mk.bat -text
 JGE/JGE/readme.txt -text
 JGE/JGE/src/Encoding.cpp -text
 JGE/JGE/src/JAnimator.cpp -text

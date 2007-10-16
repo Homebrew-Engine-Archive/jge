@@ -14,19 +14,17 @@ ____JGE
 |    |___lib
 |    |    |___psp (lib files for PSP)
 |    |    |    |
-|    |    |    |___libjgesky.a (SkyAnimator lib)
 |    |    |    |___libjge.a (JGE++ lib)
+|    |    |    |___libhgetools.a (HGE helper classes)
 |    |    |
 |    |    |___win (lib files for Windows)
 |    |         |
-|    |         |___JgeSky60.lib (SkyAnimator lib for VC6.0)
-|    |         |___JgeSky71.lib (SkyAnimator lib for VC2003)
 |    |         |___jge.lib (JGE++ lib Release version)
 |    |         |___jge_debug.lib (JGE++ lib debug version)
 |    |
 |    |___src (JGE++ source files)
 |
-|___Demo
+|___Tools
 |    |___bin
 |    |___Debug
 |    |___JGEFramework
@@ -35,48 +33,43 @@ ____JGE
 |        |___GameApp.cpp
 |        |___GameApp.h
 |            
-|___Mario (same structure as Demo)
+|___Tutorials
 |
-|___SkyDemo (same structure as Demo)
-|
-|___StarBugz (same structure as Demo)
+|___Projects
+
 
 
 To build the JGE++ lib for Windows:
 -----------------------------------
-Open "JGE.dsw" in JGE directory with Visual Studio 6.0. With the BATCH BUILD
-option, select "REBUILD ALL".
-
-
-To build the JGE++ lib for PSP:
--------------------------------
-Change to JGE directory, then
-
-make clean
-make install
-
-or just run the batch file "mk.bat"
+Open "JGE.sln" in Visual C++ 2005 Express.
 
 
 To build a project for Windows:
 -------------------------------
-Open "xxx.dsw" in the project directory with Visual Studio 6.0 and build 
-for either "Release" or "Debug". 
+
+
+To build JGE for PSP:
+---------------------
+Change to the JGE directory (say, in a cygwin prompt). 
+
+Do either:
+
+(1) type in "make" or "make 1xx" to build for 1.xx firmware, 
+	OR
+(2) type in "make 3xx" to build for 3.xx firmware.
 
 
 To build a project for PSP:
 ---------------------------
-Change to the project directory, then
+Change to your project directory (say, in a cygwin prompt). Do either:
 
-make clean
-make
-
-or just run the batch file "mk.bat"
+(1) type in "make" or "make 1xx" to build for 1.xx firmware, 
+	OR
+(2) type in "make 3xx" to build for 3.xx firmware.
 
 
 To Run (on Windows):
 --------------------
-You need DirectX 8.0+ installed.
 
 Key mapping:
 
@@ -84,10 +77,10 @@ PSP                     WINDOWS
 ------------------      -------------
 UP/DOWN/LEFT/RIGHT      W/S/A/D
 ANALOG CONTROL          UP/DOWN/LEFT/RIGHT
-TRIANGLE                8 on NumPad (with NUMLOCK)
-SQUARE                  4 on NumPad (with NUMLOCK)
-CIRCLE                  6 on NumPad (with NUMLOCK)
-CROSS                   2 on NumPad (with NUMLOCK)
+TRIANGLE                I
+SQUARE                  J
+CIRCLE                  L
+CROSS                   K
 SELECT                  CTRL
 START                   ENTER
 HOME                    F1
@@ -99,65 +92,51 @@ R                       E
 
 To Run (on PSP):
 ----------------
-With firmware 1.50 PSP, use KXploit Tool to transfer the proper EBOOT.PBP 
-onto your memory stick. Then you need to copy the entire folder "Res" into 
-the appropriate folder.
+Then you need to copy the entire folder "bin\Res" into the appropriate folder.
 
 
 License:
 --------
-
 JGE++ is Licensed under the BSD license, see LICENSE in root folder for details.
-
-
-Special thanks to:
-------------------
-
-- PSPSDK team
-- devkitPro team
-- friends at pspchina.net
-- Jasmine (James' lovely wife)
 
 
 Credits:
 --------
-JGE++: 
-Programmer - James Hui (a.k.a. Dr.Watson)
+The JGE++ team is: 
+- James Hui (a.k.a. Dr.Watson)
+- Duan Sijiu (a.k.a. Chi80)
 
-SkyAnimator and SkyAnimator Demo:
-Programmer - HuangYZ
 
-JGE++ Demo:
-Programmer - James Hui
-Artist - Zhen (TMD Games)
-
-StarBugz:
-Programmer - James Hui
-Artist - Fung Lap Tong
-
-Mario Demo:
-Programmer - James Hui
-Artist - Zhen (TMD Games)
+Special thanks to:
+------------------
+- Cheese (WAV playback code)
+- Cooleyes (MP3 hardware decoder)
+- Fan990099
+- Firenonsuch
+- Subelf
+- Youmentang
+- Jasmine (James' lovely wife)
 
 
 Contact:
 --------
-Bugs and comments can be forwarded to jhkhui@yahoo.com.
+Bugs and comments can be forwarded to jhkhui@gmail.com.
  
-Copyright (C) 2006 James Hui 
-Copyright (C) 2006 HuangYZ
+Copyright (C) 2007 James Hui 
+Copyright (C) 2007 Duan Sijiu
 
 
 History:
 --------
 
-[2006.03.26]
+[2007.10.xx]
+- v 1.0 released.
 
+[2006.03.26]
 - v0.2b released. 
 - First version that enabled cross-platform development on Windows by using HGE
 - Bundled with SkyAnimator and source code of StarBugz and Mario Demo.
 
 [2006.03.12]
-
 - first public release.
 - PSP only.
