@@ -1,7 +1,7 @@
 all:
 	$(MAKE) -f Makefile.1xx SCEkxploit
 
-150:
+1xx:
 	$(MAKE) -f Makefile.1xx SCEkxploit
 
 3xx:
@@ -10,4 +10,3 @@ all:
 clean:
 	$(MAKE) -f Makefile.1xx clean
 	$(MAKE) -f Makefile.3xx clean
-	
