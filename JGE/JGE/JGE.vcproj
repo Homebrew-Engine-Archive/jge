@@ -393,6 +393,22 @@
 				>
 			</File>
 			<File
+				RelativePath=".\src\JParticle.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\src\JParticleEffect.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\src\JParticleEmitter.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\src\JParticleSystem.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\src\win\JRenderer_Win.cpp"
 				>
 			</File>
@@ -569,6 +585,22 @@
 			</File>
 			<File
 				RelativePath=".\include\JOBJModel.h"
+				>
+			</File>
+			<File
+				RelativePath=".\include\JParticle.h"
+				>
+			</File>
+			<File
+				RelativePath=".\include\JParticleEffect.h"
+				>
+			</File>
+			<File
+				RelativePath=".\include\JParticleEmitter.h"
+				>
+			</File>
+			<File
+				RelativePath=".\include\JParticleSystem.h"
 				>
 			</File>
 			<File
