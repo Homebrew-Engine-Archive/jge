@@ -340,6 +340,10 @@ JGE/JGE/include/JInputSystem.h -text
 JGE/JGE/include/JLBFont.h -text
 JGE/JGE/include/JMD2Model.h -text
 JGE/JGE/include/JOBJModel.h -text
+JGE/JGE/include/JParticle.h -text
+JGE/JGE/include/JParticleEffect.h -text
+JGE/JGE/include/JParticleEmitter.h -text
+JGE/JGE/include/JParticleSystem.h -text
 JGE/JGE/include/JRenderer.h -text
 JGE/JGE/include/JResourceManager.h -text
 JGE/JGE/include/JSoundSystem.h -text
