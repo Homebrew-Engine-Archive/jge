@@ -16,6 +16,13 @@
 #include <map>
 #include <string>
 
+#ifdef WIN32
+
+#else
+	#include <pspiofilemgr.h>
+	#include <pspiofilemgr_fcntl.h>
+#endif
+
 #include "unzip/unzip.h"
 
 using namespace std;
@@ -106,7 +113,11 @@ private:
 	string mZipFileName;
 	char *mPassword;
 	bool mZipAvailable;
+#ifdef WIN32
 	FILE *mFile;
+#else
+	SceUID mFile;
+#endif
 	unzFile mZipFile;
 	int mFileSize;
 
