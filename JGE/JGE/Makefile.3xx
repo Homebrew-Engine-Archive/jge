@@ -6,6 +6,7 @@ OBJS = src/JApp.o src/JGBKFont.o \
 	src/JGameObject.o src/JSpline.o src/JAnimator.o \
 	src/JResourceManager.o \
 	src/JFileSystem.o \
+	src/JParticle.o src/JParticleEmitter.o src/JParticleEffect.o src/JParticleSystem.o \
 	src/unzip/ioapi.o src/unzip/mztools.o src/unzip/unzip.o \
 	src/JSprite.o src/Vector2D.o \
 	src/tinyxml/tinystr.o src/tinyxml/tinyxml.o \
