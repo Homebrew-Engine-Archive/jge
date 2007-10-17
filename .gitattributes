@@ -486,6 +486,10 @@ JGE/JGE/src/JInputSystem.cpp -text
 JGE/JGE/src/JLBFont.cpp -text
 JGE/JGE/src/JMD2Model.cpp -text
 JGE/JGE/src/JOBJModel.cpp -text
+JGE/JGE/src/JParticle.cpp -text
+JGE/JGE/src/JParticleEffect.cpp -text
+JGE/JGE/src/JParticleEmitter.cpp -text
+JGE/JGE/src/JParticleSystem.cpp -text
 JGE/JGE/src/JResourceManager.cpp -text
 JGE/JGE/src/JSfx.cpp -text
 JGE/JGE/src/JSpline.cpp -text
