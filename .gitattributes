@@ -716,6 +716,7 @@ JGE/Tutorials/09.3DPrimer/bin/fmod.dll -text
 JGE/Tutorials/09.3DPrimer/bin/giflib4.dll -text
 JGE/Tutorials/09.3DPrimer/bin/libpng13.dll -text
 JGE/Tutorials/09.3DPrimer/bin/zlib1.dll -text
+JGE/Tutorials/09.3DPrimer/icon.png -text
 JGE/Tutorials/09.3DPrimer/src/GameApp.cpp -text
 JGE/Tutorials/09.3DPrimer/src/GameApp.h -text
 JGE/Tutorials/09.3DPrimer/src/GameLauncher.cpp -text
