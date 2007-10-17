@@ -15,6 +15,7 @@ LIBS = -ljge -lfreetype -ljpeg -lgif -lpng -lz -lm -lmikmod -lpsppower -lpspmpeg
 
 EXTRA_TARGETS = EBOOT.PBP
 PSP_EBOOT_TITLE = JGE++ HelloWorld
+PSP_EBOOT_ICON = icon.png
 
 PSPSDK=$(shell psp-config --pspsdk-path)
 include $(PSPSDK)/lib/build.mak

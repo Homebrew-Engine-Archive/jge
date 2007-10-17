@@ -558,6 +558,7 @@ JGE/Tutorials/01.HelloWorld/bin/Res/f3.png -text
 JGE/Tutorials/01.HelloWorld/bin/fmod.dll -text
 JGE/Tutorials/01.HelloWorld/bin/libpng13.dll -text
 JGE/Tutorials/01.HelloWorld/bin/zlib1.dll -text
+JGE/Tutorials/01.HelloWorld/icon.png -text
 JGE/Tutorials/01.HelloWorld/src/GameApp.cpp -text
 JGE/Tutorials/01.HelloWorld/src/GameApp.h -text
 JGE/Tutorials/01.HelloWorld/src/GameLauncher.cpp -text
