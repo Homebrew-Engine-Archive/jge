@@ -707,13 +707,7 @@ JGE/Tutorials/09.3DPrimer/Makefile.3xx -text
 JGE/Tutorials/09.3DPrimer/bin/3D.exe -text
 JGE/Tutorials/09.3DPrimer/bin/Res/abarlith.png -text
 JGE/Tutorials/09.3DPrimer/bin/Res/bg.png -text
-JGE/Tutorials/09.3DPrimer/bin/Res/bombe.obj -text
-JGE/Tutorials/09.3DPrimer/bin/Res/bombeTemplate.jpg -text
 JGE/Tutorials/09.3DPrimer/bin/Res/box.png -text
-JGE/Tutorials/09.3DPrimer/bin/Res/terran.md2 -text
-JGE/Tutorials/09.3DPrimer/bin/Res/terran.png -text
-JGE/Tutorials/09.3DPrimer/bin/Res/terran_weapon.md2 -text
-JGE/Tutorials/09.3DPrimer/bin/Res/terran_weapon.png -text
 JGE/Tutorials/09.3DPrimer/bin/Res/tris.md2 -text
 JGE/Tutorials/09.3DPrimer/bin/Res/weapon.md2 -text
 JGE/Tutorials/09.3DPrimer/bin/Res/weapon.png -text
