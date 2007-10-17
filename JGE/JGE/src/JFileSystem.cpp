@@ -47,7 +47,11 @@ void JFileSystem::Destroy()
 JFileSystem::JFileSystem()
 {
 	mZipAvailable = false;
+#ifdef WIN32
 	mFile = NULL;
+#else
+	mFile = -1;
+#endif
 	mPassword = NULL;
 	mZipFile = NULL;
 	mFileSize = 0;

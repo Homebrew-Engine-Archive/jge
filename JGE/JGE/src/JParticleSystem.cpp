@@ -19,27 +19,27 @@
 
 
 //-------------------------------------------------------------------------------------
-JParticleSystem* JParticleSystem::mInstance = NULL;
+// JParticleSystem* JParticleSystem::mInstance = NULL;
+// 
+// JParticleSystem* JParticleSystem::GetInstance()
+// {
+// 	if (mInstance == NULL)
+// 	{
+// 		mInstance = new JParticleSystem();
+// 	}
+// 
+// 	return mInstance;
+// }
 
-JParticleSystem* JParticleSystem::GetInstance()
-{
-	if (mInstance == NULL)
-	{
-		mInstance = new JParticleSystem();
-	}
 
-	return mInstance;
-}
-
-
-void JParticleSystem::Destroy()
-{
-	if (mInstance)
-	{
-		delete mInstance;
-		mInstance = NULL;
-	}
-}
+// void JParticleSystem::Destroy()
+// {
+// 	if (mInstance)
+// 	{
+// 		delete mInstance;
+// 		mInstance = NULL;
+// 	}
+// }
 
 
 //-------------------------------------------------------------------------------------

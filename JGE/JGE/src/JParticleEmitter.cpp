@@ -168,7 +168,7 @@ void JParticleEmitter::Update(float dt)
 		
 		float timeForOneParticle = 1.0f/mQuantity.mCurr;
 
-		float potentialParticles = (int)(mEmitTimer/timeForOneParticle);
+		float potentialParticles = (float) ((int)(mEmitTimer/timeForOneParticle));
 		if (potentialParticles >= 1.0f)
 			mEmitTimer -= (potentialParticles*timeForOneParticle);
 
