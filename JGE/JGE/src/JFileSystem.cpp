@@ -120,14 +120,25 @@ bool JFileSystem::OpenFile(const string &filename)
 	}
 	else
 	{
-		mFile = fopen(path.c_str(), "rb");
-		if (mFile != NULL)
-		{
-			fseek(mFile, 0, SEEK_END);
-			mFileSize = ftell(mFile);
-			fseek(mFile, 0, SEEK_SET);
-			return true;
-		}
+		#ifdef WIN32
+			mFile = fopen(path.c_str(), "rb");
+			if (mFile != NULL)
+			{
+				fseek(mFile, 0, SEEK_END);
+				mFileSize = ftell(mFile);
+				fseek(mFile, 0, SEEK_SET);
+				return true;
+			}
+		#else
+			mFile = sceIoOpen(path.c_str(), PSP_O_RDONLY, 0777);
+			if (mFile > 0)
+			{
+				mFileSize = sceIoLseek(mFile, 0, PSP_SEEK_END);
+				sceIoLseek(mFile, 0, PSP_SEEK_SET);
+				return true;
+			}
+		#endif		
+		
 			
 	}
 	
@@ -141,8 +152,13 @@ void JFileSystem::CloseFile()
 	if (mZipAvailable && mZipFile != NULL)
 		return;
 
-	if (mFile != NULL)
-		fclose(mFile);
+	#ifdef WIN32
+		if (mFile != NULL)
+			fclose(mFile);
+	#else
+		if (mFile > 0)
+			sceIoClose(mFile);
+	#endif
 }
 
 
@@ -154,7 +170,11 @@ int JFileSystem::ReadFile(void *buffer, int size)
 	}
 	else
 	{
-		return fread(buffer, 1, size, mFile);
+		#ifdef WIN32
+			return fread(buffer, 1, size, mFile);
+		#else
+			return sceIoRead(mFile, buffer, size);
+		#endif
 	}
 }
 
