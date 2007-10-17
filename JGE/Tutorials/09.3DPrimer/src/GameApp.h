@@ -16,7 +16,7 @@
 class JQuad;
 class JSprite;
 class JTexture;
-class JOBJModel;
+class JMD2Model;
 
 class GameApp:	public JApp
 {
@@ -25,11 +25,11 @@ private:
 	JTexture* mBgTex;
 	JQuad* mBg;
 
-	JOBJModel* mOBJ;
+	JMD2Model *mPlayer;
+	JMD2Model *mGun;
 
+	int mState;
 	float mAngle;
-	float mScale;
-	float mDelta;
 	
 public:
 	GameApp();

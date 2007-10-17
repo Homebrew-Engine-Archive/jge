@@ -10,11 +10,6 @@
 
 #include <stdio.h>
 
-#ifdef WIN32
-#else
-#include <pspgu.h>
-#include <pspgum.h>
-#endif
 
 #include <JGE.h>
 #include <JRenderer.h>
@@ -27,28 +22,14 @@
 #include <JMD2Model.h>
 
 
-
-JMD2Model *mPlayer = NULL;
-JMD2Model *mGun = NULL;
-
-JMD2Model *mTerran = NULL;
-JMD2Model *mTerranGun = NULL;
-
-float mAnimationTimer = 0.0f;
-
-int mState = STATE_IDLE;
-int mTState = STATE_IDLE;
-
-
-float mTerranState = 0.0f;
-
 GameApp::GameApp()
 {
 	mTexture = NULL;
 	mBgTex = NULL;
 	mBg = NULL;
-	mOBJ = NULL;
 
+	mPlayer = NULL;
+	mGun = NULL;
 }
 
 
@@ -59,38 +40,19 @@ GameApp::~GameApp()
 
 void GameApp::Create()
 {
+	mAngle = 0.0f;
+	mState = STATE_IDLE;
+
 	JRenderer* renderer = JRenderer::GetInstance();
 	mTexture = renderer->LoadTexture("box.png");
 	mBgTex = renderer->LoadTexture("bg.png");
 	mBg = new JQuad(mBgTex, 0, 0, 480, 272);
 
-	mOBJ = new JOBJModel();
-	mOBJ->Load("fighter.obj", "huaying.png");
-
-	int n = 0;
-	PIXEL_TYPE *bits = new PIXEL_TYPE[50*50];
-	for (int i=0;i<50;i++)
-		for (int j=0;j<50;j++)
-			bits[n++] = ARGB(255,255,0,255);
-
-	mBgTex->UpdateBits(10, 10, 50, 50, bits);
-
-	mScale = 1.0f;
-	mAngle = 0.0f;
-	mDelta = 0.001f;
-
 	mPlayer = new JMD2Model();
-	mPlayer->Load("tris.md2", "abarlith.png");
+	mPlayer->Load("tris.md2", "abarlith.png");		// load a MD2 character
 
 	mGun = new JMD2Model();
-	mGun->Load("weapon.md2", "weapon.png");
-
-	mTerran = new JMD2Model();
-	mTerran->Load("terran.md2", "terran.png");
-
-	mTerranGun = new JMD2Model();
-	mTerranGun->Load("terran_weapon.md2", "terran_weapon.png");
-
+	mGun->Load("weapon.md2", "weapon.png");			// load the character's weapon
 
 	if (mPlayer != NULL && mGun != NULL)
 	{
@@ -106,29 +68,11 @@ void GameApp::Create()
 void GameApp::Destroy()
 {
 
-	if (mTexture)
-		delete mTexture;
-
-	if (mBgTex)
-		delete mBgTex;
-
-	if (mBg)
-		delete mBg;
-
-	if (mPlayer)
-		delete mPlayer;
-
-	if (mGun)
-		delete mGun;
-
-	if (mTerran)
-		delete mTerran;
-
-	if (mTerranGun)
-		delete mTerranGun;
-
-	if (mOBJ)
-		delete mOBJ;
+	SAFE_DELETE(mTexture);
+	SAFE_DELETE(mBgTex);
+	SAFE_DELETE(mBg);
+	SAFE_DELETE(mPlayer);
+	SAFE_DELETE(mGun);
 
 }
 
@@ -153,30 +97,18 @@ void GameApp::Update()
 
 
 	int mNewState = mState;
-	if (engine->GetButtonClick(PSP_CTRL_UP))
+	if (engine->GetButtonClick(PSP_CTRL_UP) || engine->GetButtonClick(PSP_CTRL_LEFT))
 	{
 		mNewState--;
 		if (mNewState < STATE_IDLE)
 			mNewState = STATE_FALING_FORWARD_DYING;
-		//
-		//		if (mNewState == STATE_JUMP)
-		//			mNewState= STATE_SHOT_IN_SHOULDER;
-		//
-		//		if (mNewState == STATE_KNEELING_DYING)
-		//			mNewState = STATE_IDLE4; 
-
 
 	}
-	else if (engine->GetButtonClick(PSP_CTRL_DOWN))
+	else if (engine->GetButtonClick(PSP_CTRL_DOWN) || engine->GetButtonClick(PSP_CTRL_RIGHT))
 	{
 		mNewState++;
 		if (mNewState > STATE_FALING_FORWARD_DYING)
 			mNewState = STATE_IDLE;
-		//		if (mNewState == STATE_JUMP)
-		//			mNewState= STATE_IDLE2;
-		//		
-		//		if (mNewState == STATE_CROUCHING)
-		//			mNewState = STATE_FALLING_BACK_DYING; 
 
 	} 
 
@@ -189,39 +121,12 @@ void GameApp::Update()
 
 	float dt = engine->GetDelta();	// get number of milliseconds passed since last frame
 
-	mAngle += 1.0f*dt;			// the frame rate is not fixed by default, so we use dt to do adjustments
+	mAngle += 1.0f*dt;				// the frame rate is not fixed by default, so we use dt to do adjustments
 	if (mAngle > M_PI*2.0f)			// angles are in radian, so 2 PI is one full circle
 		mAngle = 0.0f;
 
-	mScale += mDelta*dt;
-	if (mScale > 2.0f || mScale < 0.5f)
-	{
-		mDelta *= -1;
-		mScale += mDelta*dt;
-	}
-
-//	val += 0.1f*dt;
-	//mEngine->printf("%p t:%d pt:%d f:%d s:%d", mPlayer, mPlayer->mModel->numTriangles, mPlayer->mModel->numPoints, mPlayer->mModel->numFrames, mPlayer->mModel->frameSize);
-
-
-	mPlayer->Update(dt);
+	mPlayer->Update(dt);			// update model animation
 	mGun->Update(dt);
-
-//	mTerran->Update(dt);
- //	mTerranGun->Update(dt);
-
-	mAnimationTimer = 6.0f * dt;
-
-	mTerranState += 0.2f*dt;
-
-	int state = (int)mTerranState;
-	state %= STATE_FALLING_BACK_SLOWLY_DYING;
-	if (state != mTState && mTerran != NULL && mTerranGun != NULL)
-	{
-		mTState = state;
-		mTerran->SetState(mTState);
-		mTerranGun->SetState(mTState);
-	}
 
 }
 
@@ -234,32 +139,20 @@ void GameApp::Render()
 	renderer->Enable2D();
 	renderer->RenderQuad(mBg, 0, 0);
 	
-
 	renderer->Enable3D();
 
 	renderer->PushMatrix();
 	renderer->Translate(30.0f, 0.0f, -60.0f);
-	renderer->RotateX(-M_PI_2);
+	renderer->RotateX(-M_PI_2);						// adjust the model to the right orientation
 	renderer->RotateZ(mAngle);
 
-	//mPlayer->Render(74);
-	mPlayer->Render();
+	mPlayer->Render();								// render the model
 	mGun->Render();
 
  	renderer->PopMatrix();
- /*
-	renderer->PushMatrix();
 
- 	renderer->Translate(-30.0f, 0.0f, -60.0f);
- 	renderer->RotateX(-M_PI_2);
- 	renderer->RotateZ(mAngle/2);
- 
- 	mTerran->Render();
- 	mTerranGun->Render();
-
-	renderer->PopMatrix();
-*/
-	Vertex3D tris[] =
+	
+	Vertex3D tris[] =								// define a 3D cube
 	{
 		// top
 		{ 0.0f, 0.0f, -5.0f, 5.0f, 5.0f },		
@@ -321,14 +214,9 @@ void GameApp::Render()
 	renderer->RotateX(mAngle);
 	renderer->RotateY(-mAngle);
 	renderer->RotateZ(mAngle);
-	renderer->RenderTriangles(mTexture, tris, 0, 12);
+	renderer->RenderTriangles(mTexture, tris, 0, 12);		// render the 3D cube
 	renderer->PopMatrix();
 	
-	renderer->Translate(0.0f, -1.0f, -3.0f);
-	//renderer->RotateX(mAngle);
-	renderer->RotateY(-mAngle);
-	//renderer->RotateZ(mAngle);
-	mOBJ->Render();
 }
 
 
