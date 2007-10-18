@@ -1,5 +1,5 @@
 TARGET = Images
-OBJS = src/GameApp.o src/GameLauncher.o
+OBJS = src/GameApp.o src/GameLauncher.o src/TileSet.o src/TileMap.o
 
 CFLAGS = -O2 -G0 -Wall 
 CXXFLAGS = $(CFLAGS) -fno-exceptions -fno-rtti

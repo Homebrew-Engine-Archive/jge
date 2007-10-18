@@ -1,5 +1,5 @@
 TARGET = Images
-OBJS = src/GameApp.o src/GameLauncher.o
+OBJS = src/GameApp.o src/GameLauncher.o src/TileSet.o src/TileMap.o
 
 BUILD_PRX = 1
 PSP_FW_VERSION=371

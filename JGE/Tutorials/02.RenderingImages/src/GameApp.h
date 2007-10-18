@@ -16,6 +16,8 @@
 class JQuad;
 class JSprite;
 class JTexture;
+class TileMap;
+class TileSet;
 
 class GameApp:	public JApp
 {
@@ -28,6 +30,9 @@ private:
 	float mAngle;
 	float mScale;
 	float mDelta;
+
+	TileMap *mTileMap;
+	TileSet *mTileSet;
 	
 public:
 	GameApp();

@@ -17,12 +17,16 @@
 #include <JFileSystem.h>
 
 #include "GameApp.h"
+#include "TileMap.h"
+#include "TileSet.h"
 
 
 GameApp::GameApp()
 {
 	mBgTex = NULL;
 	mBg = NULL;
+	mTileSet = NULL;
+	mTileMap = NULL;
 }
 
 
@@ -36,8 +40,13 @@ void GameApp::Create()
 	//JFileSystem::GetInstance()->AttachZipFile("res.zip");
 
 	JRenderer* renderer = JRenderer::GetInstance();
-	mBgTex = renderer->LoadTexture("bg3.jpg", TEX_TYPE_USE_VRAM);
-	mBg = new JQuad(mBgTex, 0, 0, 480, 272);
+	mBgTex = renderer->LoadTexture("tiles.png", TEX_TYPE_USE_VRAM);
+	//mBg = new JQuad(mBgTex, 0, 0, 480, 272);
+
+	mTileSet = new TileSet(mBgTex);
+	mTileSet->Init(2, 2, 2, 2, 48, 48, 10, 10);
+
+	mTileMap = new TileMap("map.dat", mTileSet, 48, 48);
 }
 
 
@@ -71,6 +80,13 @@ void GameApp::Update()
 		return;
 	}
 
+	float dt = engine->GetDelta();
+
+	if (mTileMap != NULL)
+	{
+		//		mTileMap->SetTarget(mX-400.0f, mY);
+		mTileMap->Update(dt);
+	}
 
 }
 
@@ -81,10 +97,11 @@ void GameApp::Render()
 	JRenderer* renderer = JRenderer::GetInstance();
 
 
-	renderer->ClearScreen(ARGB(0,0,0,0));
-	
+	//renderer->ClearScreen(ARGB(0,0,0,0));
 
-	renderer->RenderQuad(mBg, 0, 0);
+	mTileMap->Render();
+	
+	//renderer->RenderQuad(mBg, 0, 0);
 
 }
 
