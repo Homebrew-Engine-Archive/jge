@@ -78,7 +78,7 @@
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
 				AdditionalLibraryDirectories="..\..\JGE\Dependencies\lib,..\..\JGE\lib\win"
-				IgnoreDefaultLibraryNames="LIBCD"
+				IgnoreDefaultLibraryNames="LIBCD,LIBCMT"
 				ProgramDatabaseFile=".\Release/Animator.pdb"
 				SubSystem="2"
 				TargetMachine="1"

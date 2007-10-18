@@ -6,7 +6,7 @@
 // 
 // Copyright (c) 2007 James Hui (a.k.a. Dr.Watson) <jhkhui@gmail.com>
 // 
-// Copyright (c) 2007 Chen Chao <chenchao868@21cn.com>
+// Graphics copyright (c) 2007 Chen Chao <chenchao868@21cn.com>
 //
 //-------------------------------------------------------------------------------------
 
@@ -37,11 +37,15 @@ GameApp::~GameApp()
 
 void GameApp::Create()
 {
+	// JAnimator needs to get its resource from a JResourceManager
 	mResourceMgr = new JResourceManager();
 	mResourceMgr->LoadResource("animation.res");
 
+	// create the first animator
 	mLeft = new JAnimator(mResourceMgr);
 	mLeft->Load("left.anm");
+
+	// create the second animator
 	mRight = new JAnimator(mResourceMgr);
 	mRight->Load("right.anm");
 	
@@ -51,6 +55,7 @@ void GameApp::Create()
 	mRight->SetHotSpot(79,126);
 	mRight->SetPosition(240,220);
 
+	// start the animation
 	mCurr = mLeft;
 	mCurr->Start();
 }
@@ -92,6 +97,8 @@ void GameApp::Update()
 
 	float dt = engine->GetDelta();
 	mCurr->Update(dt);
+
+	// change to the other animation when the current one is done
 	if (!mCurr->IsAnimating())
 	{
 		if (mCurr == mLeft)
@@ -109,10 +116,13 @@ void GameApp::Render()
 
 	JRenderer* renderer = JRenderer::GetInstance();
 	
+	// turn off bilinear filtering to have sharp image
 	renderer->EnableTextureFilter(false);
 
+	// render background
 	renderer->RenderQuad(mResourceMgr->GetQuad("bg"), 480>>1, 272>>1);
 	
+	// render animation
 	mCurr->Render();
 
 }
