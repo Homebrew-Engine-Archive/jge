@@ -11,7 +11,7 @@ ASFLAGS = $(CXXFLAGS)
 INCDIR = ../../JGE/include ../../JGE/include/psp ../../JGE/include/psp/freetype2 ../../JGE/src
 LIBDIR = ../../JGE/lib/psp
 LDFLAGS =
-LIBS = -lhgetools -ljge -lgif -lfreetype -ljpeg -lpng -lz -lm -lmikmod -lpsppower -lpspmpeg -lpspaudiocodec -lpspaudiolib -lpspaudio -lpspgum -lpspgu -lpsprtc -lstdc++ 
+LIBS = -lhgetools -ljge300 -lgif -lfreetype -ljpeg -lpng -lz -lm -lmikmod -lpsppower -lpspmpeg -lpspaudiocodec -lpspaudiolib -lpspaudio -lpspgum -lpspgu -lpsprtc -lstdc++ 
 
 EXTRA_TARGETS = EBOOT.PBP
 PSP_EBOOT_TITLE = HGE Particles Demo
