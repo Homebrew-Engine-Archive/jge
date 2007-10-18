@@ -569,6 +569,7 @@ JGE/Tutorials/01.HelloWorld/bin/HelloWorld.exe -text
 JGE/Tutorials/01.HelloWorld/bin/Res/f3.dat -text
 JGE/Tutorials/01.HelloWorld/bin/Res/f3.png -text
 JGE/Tutorials/01.HelloWorld/bin/fmod.dll -text
+JGE/Tutorials/01.HelloWorld/bin/giflib4.dll -text
 JGE/Tutorials/01.HelloWorld/bin/libpng13.dll -text
 JGE/Tutorials/01.HelloWorld/bin/zlib1.dll -text
 JGE/Tutorials/01.HelloWorld/icon.png -text
