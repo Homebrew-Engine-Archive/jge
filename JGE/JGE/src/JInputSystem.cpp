@@ -42,7 +42,7 @@ JInputSystem::JInputSystem(void)
 	mBitmapFont12->Init("Res/ASC12", "Res/GBK12", 12,true);
 
 	mTimer=0.0f;
-	//mInPut[0]=0;
+	mInPut[0]=0;
 	mpInput=NULL;
 	mPY[0]=0;
 	mStatus = eInputEng;
@@ -54,7 +54,7 @@ JInputSystem::JInputSystem(void)
 
 	mHZShowFirstIndex=0;
 	mHZSelIndex=0;
-	mHZSelTableSize=8;
+	mHZSelTableSize=6;
 	mIsHZ_H=true;
 	mHZ=NULL;
 }
@@ -389,12 +389,13 @@ void JInputSystem::UpdateInputNum()
 void JInputSystem::Draw()
 {
 	DrawInputHelp(2,181);
-	DrawStatus(450,3/*17*//*5*/);
+	//DrawStatus(450,3/*17*//*5*/);
 
 	float x,y;
 	x=SCREEN_WIDTH_F/2;
 	y=SCREEN_HEIGHT_F/2;
 
+	DrawStatus(x-25,y-8);
 	DrawInputString(x,y);
 	if(mStatus!=eInputEng)
 	{
@@ -403,7 +404,6 @@ void JInputSystem::Draw()
  			//DrawPYSel(220,15);
  		
 		mIsHZ_H?DrawHZSel_H(x,y+28):DrawHZSel(x,y+28);
-		//DrawHZSel_H(170,29);
 	}
 }
 
