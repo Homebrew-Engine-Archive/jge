@@ -14,8 +14,10 @@ ____JGE
 |    |___lib
 |    |    |___psp (lib files for PSP)
 |    |    |    |
-|    |    |    |___libjge.a (JGE++ lib)
+|    |    |    |___libjge100.a (JGE++ lib for 1.xx firmware)
+|    |    |    |___libjge300.a (JGE++ lib for 3.xx firmware)
 |    |    |    |___libhgetools.a (HGE helper classes)
+|    |    |    |___libjinput.a (Inpute System classes)
 |    |    |
 |    |    |___win (lib files for Windows)
 |    |         |
@@ -120,10 +122,10 @@ Special thanks to:
 
 Contact:
 --------
-Bugs and comments can be forwarded to jhkhui@gmail.com.
+Bugs and comments can be forwarded to jhkhui@gmail.com or sijiu49@gmail.com.
  
 Copyright (C) 2007 James Hui 
-Copyright (C) 2007 Duan Sijiu
+Copyright (C) 2007 Sijiu Duan	
 
 
 History:
