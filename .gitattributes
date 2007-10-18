@@ -546,6 +546,8 @@ JGE/Tools/template/bin/freetype6.dll -text
 JGE/Tools/template/bin/giflib4.dll -text
 JGE/Tools/template/bin/libpng13.dll -text
 JGE/Tools/template/bin/zlib1.dll -text
+JGE/Tools/template/mk1xx.bat -text
+JGE/Tools/template/mk3xx.bat -text
 JGE/Tools/template/src/GameApp.cpp -text
 JGE/Tools/template/src/GameApp.h -text
 JGE/Tools/template/src/GameLauncher.cpp -text
