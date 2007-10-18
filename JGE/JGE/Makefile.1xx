@@ -1,6 +1,6 @@
 PSPSDK=$(shell psp-config --pspsdk-path)
 PSPDIR=$(shell psp-config --psp-prefix)
-TARGET_LIB = libjge.a
+TARGET_LIB = libjge100.a
 OBJS = src/JApp.o src/JGBKFont.o \
 	src/JGE.o src/JGfx.o src/JGui.o src/JLBFont.o src/JSfx.o \
 	src/JGameObject.o src/JSpline.o src/JAnimator.o \
@@ -28,5 +28,5 @@ LIBS = -lgif -lfreetype -ljpeg -lpng -lz -lmikmod -lpsppower -lpspmpeg -lpspaudi
 include $(PSPSDK)/lib/build.mak
 
 install: $(TARGET_LIB)
-	@cp libjge.a  lib/psp
+	@cp libjge100.a  lib/psp
 	@echo "Done"
