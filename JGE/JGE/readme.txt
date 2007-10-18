@@ -102,9 +102,9 @@ JGE++ is Licensed under the BSD license, see LICENSE in root folder for details.
 
 Credits:
 --------
-The JGE++ team is: 
+The JGE++ Team is: 
 - James Hui (a.k.a. Dr.Watson)
-- Duan Sijiu (a.k.a. Chi80)
+- Sijiu Duan (a.k.a. Chi80)
 
 
 Special thanks to:
