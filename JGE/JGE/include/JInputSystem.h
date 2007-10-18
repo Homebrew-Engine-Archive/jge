@@ -886,7 +886,7 @@ private:
 
 	float mTimer;
 	//store input STRING
-	//char  mInPut[512];
+	char  mInPut[512];
 	char * mpInput;
 	//store input PY
 	char  mPY[16];
@@ -946,6 +946,8 @@ public:
 	void DrawHZSel(float x,float y);
 	void DrawHZSel_H(float x,float y);
 	void DrawInputHelp(float x, float y);
+
+	char * GetInputString(){return mInPut;}
 };
 #endif
 
