@@ -606,6 +606,7 @@ JGE/Tutorials/03.ResourceManager/bin/fmod.dll -text
 JGE/Tutorials/03.ResourceManager/bin/giflib4.dll -text
 JGE/Tutorials/03.ResourceManager/bin/libpng13.dll -text
 JGE/Tutorials/03.ResourceManager/bin/zlib1.dll -text
+JGE/Tutorials/03.ResourceManager/icon.png -text
 JGE/Tutorials/03.ResourceManager/src/GameApp.cpp -text
 JGE/Tutorials/03.ResourceManager/src/GameApp.h -text
 JGE/Tutorials/03.ResourceManager/src/GameLauncher.cpp -text
