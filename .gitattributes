@@ -556,7 +556,6 @@ JGE/Tools/template/template.sln -text
 JGE/Tools/template/template.vcproj -text
 JGE/Tools/template/template.vcproj.user -text
 JGE/Tutorials/01.HelloWorld/HelloWorld.sln -text
-JGE/Tutorials/01.HelloWorld/HelloWorld.suo -text
 JGE/Tutorials/01.HelloWorld/HelloWorld.vcproj -text
 JGE/Tutorials/01.HelloWorld/HelloWorld.vcproj.user -text
 JGE/Tutorials/01.HelloWorld/LICENSE -text
@@ -597,7 +596,6 @@ JGE/Tutorials/03.ResourceManager/Makefile -text
 JGE/Tutorials/03.ResourceManager/Makefile.1xx -text
 JGE/Tutorials/03.ResourceManager/Makefile.3xx -text
 JGE/Tutorials/03.ResourceManager/ResourceManager.sln -text
-JGE/Tutorials/03.ResourceManager/ResourceManager.suo -text
 JGE/Tutorials/03.ResourceManager/ResourceManager.vcproj -text
 JGE/Tutorials/03.ResourceManager/ResourceManager.vcproj.user -text
 JGE/Tutorials/03.ResourceManager/bin/Res/background.jpg -text
@@ -616,7 +614,6 @@ JGE/Tutorials/04.Splines/Makefile -text
 JGE/Tutorials/04.Splines/Makefile.1xx -text
 JGE/Tutorials/04.Splines/Makefile.3xx -text
 JGE/Tutorials/04.Splines/Splines.sln -text
-JGE/Tutorials/04.Splines/Splines.suo -text
 JGE/Tutorials/04.Splines/Splines.vcproj -text
 JGE/Tutorials/04.Splines/Splines.vcproj.user -text
 JGE/Tutorials/04.Splines/bin/Res/f3.dat -text
@@ -635,7 +632,6 @@ JGE/Tutorials/05.Shapes/Makefile -text
 JGE/Tutorials/05.Shapes/Makefile.1xx -text
 JGE/Tutorials/05.Shapes/Makefile.3xx -text
 JGE/Tutorials/05.Shapes/Shapes.sln -text
-JGE/Tutorials/05.Shapes/Shapes.suo -text
 JGE/Tutorials/05.Shapes/Shapes.vcproj -text
 JGE/Tutorials/05.Shapes/Shapes.vcproj.user -text
 JGE/Tutorials/05.Shapes/bin/fmod.dll -text
@@ -652,7 +648,6 @@ JGE/Tutorials/06.TrueTypeFont/Makefile -text
 JGE/Tutorials/06.TrueTypeFont/Makefile.1xx -text
 JGE/Tutorials/06.TrueTypeFont/Makefile.3xx -text
 JGE/Tutorials/06.TrueTypeFont/TrueTypeFont.sln -text
-JGE/Tutorials/06.TrueTypeFont/TrueTypeFont.suo -text
 JGE/Tutorials/06.TrueTypeFont/TrueTypeFont.vcproj -text
 JGE/Tutorials/06.TrueTypeFont/TrueTypeFont.vcproj.user -text
 JGE/Tutorials/06.TrueTypeFont/bin/Res/BorisBlackBloxx.ttf -text
@@ -667,7 +662,6 @@ JGE/Tutorials/06.TrueTypeFont/src/GameApp.cpp -text
 JGE/Tutorials/06.TrueTypeFont/src/GameApp.h -text
 JGE/Tutorials/06.TrueTypeFont/src/GameLauncher.cpp -text
 JGE/Tutorials/07.DisplayingChinese/DisplayingChinese.sln -text
-JGE/Tutorials/07.DisplayingChinese/DisplayingChinese.suo -text
 JGE/Tutorials/07.DisplayingChinese/DisplayingChinese.vcproj -text
 JGE/Tutorials/07.DisplayingChinese/DisplayingChinese.vcproj.user -text
 JGE/Tutorials/07.DisplayingChinese/LICENSE -text
@@ -690,7 +684,6 @@ JGE/Tutorials/07.DisplayingChinese/src/GameApp.cpp -text
 JGE/Tutorials/07.DisplayingChinese/src/GameApp.h -text
 JGE/Tutorials/07.DisplayingChinese/src/GameLauncher.cpp -text
 JGE/Tutorials/08.Animator/Animator.sln -text
-JGE/Tutorials/08.Animator/Animator.suo -text
 JGE/Tutorials/08.Animator/Animator.vcproj -text
 JGE/Tutorials/08.Animator/Animator.vcproj.user -text
 JGE/Tutorials/08.Animator/LICENSE -text
@@ -709,7 +702,6 @@ JGE/Tutorials/08.Animator/src/GameApp.cpp -text
 JGE/Tutorials/08.Animator/src/GameApp.h -text
 JGE/Tutorials/08.Animator/src/GameLauncher.cpp -text
 JGE/Tutorials/09.3DPrimer/3D.sln -text
-JGE/Tutorials/09.3DPrimer/3D.suo -text
 JGE/Tutorials/09.3DPrimer/3D.vcproj -text
 JGE/Tutorials/09.3DPrimer/3D.vcproj.user -text
 JGE/Tutorials/09.3DPrimer/LICENSE -text
@@ -732,7 +724,6 @@ JGE/Tutorials/09.3DPrimer/src/GameApp.cpp -text
 JGE/Tutorials/09.3DPrimer/src/GameApp.h -text
 JGE/Tutorials/09.3DPrimer/src/GameLauncher.cpp -text
 JGE/Tutorials/10.HGEDistortionMesh/HGEDistortionMesh.sln -text
-JGE/Tutorials/10.HGEDistortionMesh/HGEDistortionMesh.suo -text
 JGE/Tutorials/10.HGEDistortionMesh/HGEDistortionMesh.vcproj -text
 JGE/Tutorials/10.HGEDistortionMesh/HGEDistortionMesh.vcproj.user -text
 JGE/Tutorials/10.HGEDistortionMesh/LICENSE -text
@@ -755,7 +746,6 @@ JGE/Tutorials/10.HGEDistortionMesh/src/GameApp.cpp -text
 JGE/Tutorials/10.HGEDistortionMesh/src/GameApp.h -text
 JGE/Tutorials/10.HGEDistortionMesh/src/GameLauncher.cpp -text
 JGE/Tutorials/11.HGEParticles/HGEParticles.sln -text
-JGE/Tutorials/11.HGEParticles/HGEParticles.suo -text
 JGE/Tutorials/11.HGEParticles/HGEParticles.vcproj -text
 JGE/Tutorials/11.HGEParticles/HGEParticles.vcproj.user -text
 JGE/Tutorials/11.HGEParticles/LICENSE -text
@@ -795,7 +785,6 @@ JGE/Tutorials/12.InputSystem/Makefile -text
 JGE/Tutorials/12.InputSystem/Makefile.1xx -text
 JGE/Tutorials/12.InputSystem/Makefile.3xx -text
 JGE/Tutorials/12.InputSystem/bin/InputSystem.exe -text
-JGE/Tutorials/12.InputSystem/bin/InputSystem.ilk -text
 JGE/Tutorials/12.InputSystem/bin/Res/ASC12 -text
 JGE/Tutorials/12.InputSystem/bin/Res/GBK12 -text
 JGE/Tutorials/12.InputSystem/bin/fmod.dll -text
