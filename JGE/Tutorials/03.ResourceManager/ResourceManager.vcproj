@@ -78,7 +78,7 @@
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
 				AdditionalLibraryDirectories="..\..\JGE\Dependencies\lib,..\..\JGE\lib\win"
-				IgnoreDefaultLibraryNames="LIBCD"
+				IgnoreDefaultLibraryNames="LIBCD,LIBCMT"
 				ProgramDatabaseFile=".\Release/ResourceManager.pdb"
 				SubSystem="2"
 				TargetMachine="1"
@@ -239,10 +239,6 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="src\GameApp.h"
-				>
-			</File>
-			<File
 				RelativePath="src\GameLauncher.cpp"
 				>
 				<FileConfiguration
@@ -273,7 +269,11 @@
 				>
 			</File>
 			<File
-				RelativePath="mk.bat"
+				RelativePath=".\Makefile.1xx"
+				>
+			</File>
+			<File
+				RelativePath=".\Makefile.3xx"
 				>
 			</File>
 		</Filter>
@@ -281,6 +281,10 @@
 			Name="Header Files"
 			Filter="h;hpp;hxx;hm;inl"
 			>
+			<File
+				RelativePath="src\GameApp.h"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Resource Files"

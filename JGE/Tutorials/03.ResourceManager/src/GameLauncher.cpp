@@ -22,3 +22,8 @@ char *JGameLauncher::GetName()
 {
 	return "Using Resource Manager";
 }
+
+u32 JGameLauncher::GetInitFlags()
+{
+	return JINIT_FLAG_NORMAL;
+}

@@ -13,17 +13,13 @@
 
 #include <JApp.h>
 
-class JQuad;
-class JSprite;
-class JTexture;
+
+class JResourceManager;
 
 class GameApp:	public JApp
 {
 private:
-	JTexture* mBgTex;
-	JTexture* mSpriteTex;
-	JQuad* mBg;
-	JSprite* mSprite;
+	JResourceManager* mResourceMgr;
 	
 public:
 	GameApp();
