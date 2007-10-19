@@ -28,6 +28,9 @@
 #pragma comment( lib, "opengl32.lib" )	// Search For OpenGL32.lib While Linking
 #pragma comment( lib, "glu32.lib" )		// Search For GLu32.lib While Linking
 #pragma comment( lib, "glaux.lib" )		// Search For GLaux.lib While Linking
+#pragma comment( lib, "User32.lib" )
+#pragma comment( lib, "Gdi32.lib" )
+#pragma comment( lib, "Comdlg32.lib" )
 
 HDC			hDC=NULL;		// Private GDI Device Context
 HGLRC		hRC=NULL;		// Permanent Rendering Context
