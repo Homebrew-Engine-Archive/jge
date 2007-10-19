@@ -16,23 +16,17 @@
 class JQuad;
 class JSprite;
 class JTexture;
-class TileMap;
-class TileSet;
 
 class GameApp:	public JApp
 {
 private:
 	JTexture* mBgTex;
 	JTexture* mSpriteTex;
+
 	JQuad* mBg;
-	JSprite* mSprite;
+	JQuad* mBoy;
+	JQuad* mGirl;
 
-	float mAngle;
-	float mScale;
-	float mDelta;
-
-	TileMap *mTileMap;
-	TileSet *mTileSet;
 	
 public:
 	GameApp();

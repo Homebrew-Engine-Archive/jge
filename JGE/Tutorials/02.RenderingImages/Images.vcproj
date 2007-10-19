@@ -4,6 +4,7 @@
 	Version="8.00"
 	Name="Images"
 	ProjectGUID="{53024371-2293-4D40-8ECF-FCB470B50DA1}"
+	RootNamespace="Images"
 	>
 	<Platforms>
 		<Platform
@@ -260,14 +261,6 @@
 					/>
 				</FileConfiguration>
 			</File>
-			<File
-				RelativePath=".\src\TileMap.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\src\TileSet.cpp"
-				>
-			</File>
 		</Filter>
 		<Filter
 			Name="Misc"
@@ -295,14 +288,6 @@
 			>
 			<File
 				RelativePath="src\GameApp.h"
-				>
-			</File>
-			<File
-				RelativePath=".\src\TileMap.h"
-				>
-			</File>
-			<File
-				RelativePath=".\src\TileSet.h"
 				>
 			</File>
 		</Filter>

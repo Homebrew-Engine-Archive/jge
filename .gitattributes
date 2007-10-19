@@ -585,12 +585,8 @@ JGE/Tutorials/02.RenderingImages/Makefile -text
 JGE/Tutorials/02.RenderingImages/Makefile.1xx -text
 JGE/Tutorials/02.RenderingImages/Makefile.3xx -text
 JGE/Tutorials/02.RenderingImages/bin/Images.exe -text
-JGE/Tutorials/02.RenderingImages/bin/Res/bg3.gif -text
-JGE/Tutorials/02.RenderingImages/bin/Res/bg3.jpg -text
-JGE/Tutorials/02.RenderingImages/bin/Res/bg3.png -text
-JGE/Tutorials/02.RenderingImages/bin/Res/map.dat -text
-JGE/Tutorials/02.RenderingImages/bin/Res/sprites.png -text
-JGE/Tutorials/02.RenderingImages/bin/Res/tiles.png -text
+JGE/Tutorials/02.RenderingImages/bin/Res/bg.jpg -text
+JGE/Tutorials/02.RenderingImages/bin/Res/planet.png -text
 JGE/Tutorials/02.RenderingImages/bin/fmod.dll -text
 JGE/Tutorials/02.RenderingImages/bin/giflib4.dll -text
 JGE/Tutorials/02.RenderingImages/bin/libpng13.dll -text
