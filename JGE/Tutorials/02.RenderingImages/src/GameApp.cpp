@@ -8,7 +8,7 @@
 // 
 //-------------------------------------------------------------------------------------
 //
-// Graphics was taken from the brilliant artist/game designer Daniel Cook's website:
+// Graphics was taken from the website of Daniel Cook:
 //
 //		http://www.lostgarden.com/
 //
