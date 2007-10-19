@@ -600,7 +600,7 @@ JGE/Tutorials/03.ResourceManager/ResourceManager.vcproj -text
 JGE/Tutorials/03.ResourceManager/ResourceManager.vcproj.user -text
 JGE/Tutorials/03.ResourceManager/bin/Res/background.jpg -text
 JGE/Tutorials/03.ResourceManager/bin/Res/planet.png -text
-JGE/Tutorials/03.ResourceManager/bin/Res/planet.xml -text
+JGE/Tutorials/03.ResourceManager/bin/Res/planet.res -text
 JGE/Tutorials/03.ResourceManager/bin/ResourceManager.exe -text
 JGE/Tutorials/03.ResourceManager/bin/fmod.dll -text
 JGE/Tutorials/03.ResourceManager/bin/giflib4.dll -text
