@@ -591,6 +591,7 @@ JGE/Tutorials/02.RenderingImages/bin/fmod.dll -text
 JGE/Tutorials/02.RenderingImages/bin/giflib4.dll -text
 JGE/Tutorials/02.RenderingImages/bin/libpng13.dll -text
 JGE/Tutorials/02.RenderingImages/bin/zlib1.dll -text
+JGE/Tutorials/02.RenderingImages/icon.png -text
 JGE/Tutorials/02.RenderingImages/src/GameApp.cpp -text
 JGE/Tutorials/02.RenderingImages/src/GameApp.h -text
 JGE/Tutorials/02.RenderingImages/src/GameLauncher.cpp -text
