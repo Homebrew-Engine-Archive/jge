@@ -269,7 +269,11 @@
 				>
 			</File>
 			<File
-				RelativePath="mk.bat"
+				RelativePath=".\Makefile.1xx"
+				>
+			</File>
+			<File
+				RelativePath=".\Makefile.3xx"
 				>
 			</File>
 		</Filter>

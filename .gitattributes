@@ -627,6 +627,7 @@ JGE/Tutorials/04.Splines/bin/fmod.dll -text
 JGE/Tutorials/04.Splines/bin/giflib4.dll -text
 JGE/Tutorials/04.Splines/bin/libpng13.dll -text
 JGE/Tutorials/04.Splines/bin/zlib1.dll -text
+JGE/Tutorials/04.Splines/icon.png -text
 JGE/Tutorials/04.Splines/src/GameApp.cpp -text
 JGE/Tutorials/04.Splines/src/GameApp.h -text
 JGE/Tutorials/04.Splines/src/GameLauncher.cpp -text
