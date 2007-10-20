@@ -15,12 +15,24 @@
 
 class JLBFont;
 class JSpline;
+class JTexture;
+class JGameObject;
 
 class GameApp:	public JApp
 {
 private:
 	JLBFont* mFont;
 	JSpline* mSpline;
+
+	JTexture* mTexBg;
+	JTexture* mTexPlane;
+
+	JQuad* mBg;
+	JGameObject* mPlane;
+
+	float mCounter;
+	int mIndex;
+	bool mShowSpline;
 	
 public:
 	GameApp();

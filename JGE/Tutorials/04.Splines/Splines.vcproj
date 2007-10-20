@@ -239,10 +239,6 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="src\GameApp.h"
-				>
-			</File>
-			<File
 				RelativePath="src\GameLauncher.cpp"
 				>
 				<FileConfiguration
@@ -281,6 +277,10 @@
 			Name="Header Files"
 			Filter="h;hpp;hxx;hm;inl"
 			>
+			<File
+				RelativePath="src\GameApp.h"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Resource Files"

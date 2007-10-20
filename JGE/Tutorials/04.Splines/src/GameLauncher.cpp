@@ -22,3 +22,9 @@ char *JGameLauncher::GetName()
 {
 	return "Demo";
 }
+
+u32 JGameLauncher::GetInitFlags()
+{
+	return JINIT_FLAG_NORMAL;
+}
+
