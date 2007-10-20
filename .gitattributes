@@ -617,9 +617,11 @@ JGE/Tutorials/04.Splines/Makefile.3xx -text
 JGE/Tutorials/04.Splines/Splines.sln -text
 JGE/Tutorials/04.Splines/Splines.vcproj -text
 JGE/Tutorials/04.Splines/Splines.vcproj.user -text
+JGE/Tutorials/04.Splines/bin/Res/bg.jpg -text
 JGE/Tutorials/04.Splines/bin/Res/f3.dat -text
 JGE/Tutorials/04.Splines/bin/Res/f3.png -text
 JGE/Tutorials/04.Splines/bin/Res/sample.spl -text
+JGE/Tutorials/04.Splines/bin/Res/sprites.png -text
 JGE/Tutorials/04.Splines/bin/Splines.exe -text
 JGE/Tutorials/04.Splines/bin/fmod.dll -text
 JGE/Tutorials/04.Splines/bin/giflib4.dll -text
