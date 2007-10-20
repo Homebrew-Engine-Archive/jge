@@ -205,6 +205,7 @@ void JRenderer::InitRenderer()
 	mImageFilter = NULL;
 
 	//mTexFilter = GU_NEAREST;
+	mCurrentTextureFilter = TEX_FILTER_LINEAR;
 
 	sceGuInit();
 
@@ -243,6 +244,8 @@ void JRenderer::InitRenderer()
 	sceGuEnable(GU_BLEND);
 	sceGuBlendFunc(GU_ADD, GU_SRC_ALPHA, GU_ONE_MINUS_SRC_ALPHA, 0, 0);
 	
+	sceGuTexFilter(GU_LINEAR,GU_LINEAR);
+
 	if (m3DEnabled)
 	{
 
@@ -257,7 +260,7 @@ void JRenderer::InitRenderer()
 		sceGuClearDepth(0);
 
 		sceGuTexEnvColor(0xffffffff);
-		sceGuTexFilter(GU_LINEAR,GU_LINEAR);
+		
 		sceGuTexScale(1.0f,1.0f);
 		sceGuTexOffset(0.0f,0.0f);
 		sceGuAmbientColor(0xffffffff);
@@ -312,9 +315,14 @@ void JRenderer::SetTexBlend(int src, int dest)
 void JRenderer::EnableTextureFilter(bool flag)
 {
 	if (flag)
-		sceGuTexFilter(GU_LINEAR, GU_LINEAR);
+		mCurrentTextureFilter = TEX_FILTER_LINEAR;
 	else
-		sceGuTexFilter(GU_NEAREST, GU_NEAREST);
+		mCurrentTextureFilter = TEX_FILTER_NEAREST;
+
+// 	if (flag)
+// 		sceGuTexFilter(GU_LINEAR, GU_LINEAR);
+// 	else
+// 		sceGuTexFilter(GU_NEAREST, GU_NEAREST);
 
 }
 
@@ -338,8 +346,11 @@ void JRenderer::BeginScene()
 	
 
 	sceGuTexMode(TEXTURE_FORMAT, 0, 0, mSwizzle);	
-	//sceGuTexFilter(GU_NEAREST, GU_NEAREST);			// GU_NEAREST good for tile-map
-	//sceGuTexFilter(GU_LINEAR, GU_LINEAR);				// GU_LINEAR good for scaling
+
+	if (mCurrentTextureFilter == TEX_FILTER_NEAREST)
+		sceGuTexFilter(GU_NEAREST, GU_NEAREST);				// GU_NEAREST good for tile-map
+	else
+		sceGuTexFilter(GU_LINEAR, GU_LINEAR);				// GU_LINEAR good for scaling
 
 }
 
