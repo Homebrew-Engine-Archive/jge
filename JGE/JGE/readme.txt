@@ -6,52 +6,52 @@ JGE++ (Jas Game Engine++) is a hardware accelerated 2D game SDK for PSP. It supp
 You can use JGE++ to make Windows games but the primary platform is PSP.
 
 
-Directory Structure:
---------------------
-____JGE
-|    |___HGE (Windows backend)
-|    |___include (JGE++ header files)
-|    |___lib
-|    |    |___psp (lib files for PSP)
-|    |    |    |
-|    |    |    |___libjge100.a (JGE++ lib for 1.xx firmware)
-|    |    |    |___libjge300.a (JGE++ lib for 3.xx firmware)
-|    |    |    |___libhgetools.a (HGE helper classes)
-|    |    |    |___libjinput.a (Inpute System classes)
-|    |    |
-|    |    |___win (lib files for Windows)
-|    |         |
-|    |         |___jge.lib (JGE++ lib Release version)
-|    |         |___jge_debug.lib (JGE++ lib debug version)
-|    |
-|    |___src (JGE++ source files)
-|
-|___Tools
-|    |___bin
-|    |___Debug
-|    |___JGEFramework
-|    |___Release
-|    |___src
-|        |___GameApp.cpp
-|        |___GameApp.h
-|            
-|___Tutorials
-|
-|___Projects
+Features
+
+    * 1.xx and 3.xx firmware support on PSP.
+    * Hardware accelerated 2D rendering including scaling, rotations and colour blending.
+    * Animated sprites.
+    * Geometry shapes rendering, including rectangle, circle, polygons and thick lines.
+    * Loading PNG, JPEG and GIF.
+    * Spline.
+    * Bitmap fonts.
+    * Chinese GBK fonts.
+    * True Type fonts.
+    * Stereo WAV playback.
+    * Hardware MP3 decoding on PSP.
+    * Resource manager.
+    * Zipped resource support.
+    * Frame based animation system using XML scripts.
+    * Basic 3D functions, including support of rendering textured triangles, Quake 2 (MD2) model and OBJ model.
+    * Port of HGE helper classes: hgeParticleSystem, hgeDistortionMesh and hgeFont.
+    * Input helper class for both English and Chinese.
 
 
 
-To build the JGE++ lib for Windows:
------------------------------------
-Open "JGE.sln" in Visual C++ 2005 Express.
+Project page:
+-------------
+http://jge.googlecode.com/
 
 
-To build a project for Windows:
--------------------------------
+
+Official forums:
+----------------
+http://jge.khors.com/index.php
 
 
-To build JGE for PSP:
----------------------
+
+To create a new JGE++ project:
+------------------------------
+Change to "JGE\Tools" in a command prompt and type:
+
+newproject project_name project_description
+
+A project called "project_name" will be created in "JGE\Projects". You can find a VC2005 Express solution file there and you can open it up and start working on your own cool PSP game.
+
+
+
+To build JGE++ for PSP:
+-----------------------
 Change to the JGE directory (say, in a cygwin prompt). 
 
 Do either:
@@ -59,6 +59,7 @@ Do either:
 (1) type in "make" or "make 1xx" to build for 1.xx firmware, 
 	OR
 (2) type in "make 3xx" to build for 3.xx firmware.
+
 
 
 To build a project for PSP:
@@ -70,13 +71,12 @@ Change to your project directory (say, in a cygwin prompt). Do either:
 (2) type in "make 3xx" to build for 3.xx firmware.
 
 
-To Run (on Windows):
---------------------
 
-Key mapping:
+Key mapping on Windows:
+-----------------------
 
 PSP                     WINDOWS
-------------------      -------------
+==================      ==================
 UP/DOWN/LEFT/RIGHT      W/S/A/D
 ANALOG CONTROL          UP/DOWN/LEFT/RIGHT
 TRIANGLE                I
@@ -92,9 +92,11 @@ L                       Q
 R                       E
 
 
-To Run (on PSP):
-----------------
-Then you need to copy the entire folder "bin\Res" into the appropriate folder.
+
+Note for testing on PSP:
+------------------------
+Please remember to copy the entire folder "bin\Res" into the appropriate folder on PSP.
+
 
 
 License:
@@ -102,11 +104,14 @@ License:
 JGE++ is Licensed under the BSD license, see LICENSE in root folder for details.
 
 
+
 Credits:
 --------
 The JGE++ Team is: 
+
 - James Hui (a.k.a. Dr.Watson)
 - Sijiu Duan (a.k.a. Chi80)
+
 
 
 Special thanks to:
@@ -115,24 +120,24 @@ Special thanks to:
 - Cooleyes (MP3 hardware decoder)
 - Fan990099
 - Firenonsuch
+- Newcreat
 - Subelf
 - Youmentang
-- Jasmine (James' lovely wife)
+- Jasmine
+
 
 
 Contact:
 --------
 Bugs and comments can be forwarded to jhkhui@gmail.com or sijiu49@gmail.com.
  
-Copyright (C) 2007 James Hui 
-Copyright (C) 2007 Sijiu Duan	
 
 
 History:
 --------
 
-[2007.10.xx]
-- v 1.0 released.
+[2007.10.22]
+- v1.0 released.
 
 [2006.03.26]
 - v0.2b released. 
@@ -142,3 +147,9 @@ History:
 [2006.03.12]
 - first public release.
 - PSP only.
+
+________________________________________________________________________________________
+
+Copyright (C) 2007 James Hui <jhkhui@gmail.com>
+Copyright (C) 2007 Sijiu Duan <sijiu49@gmail.com>
+
