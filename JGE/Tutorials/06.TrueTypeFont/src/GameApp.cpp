@@ -26,7 +26,8 @@ GameApp::GameApp()
 
 	mTTFont1 = NULL;
 	mTTFont2 = NULL;
-	
+	mTTFSmall = NULL;
+
 }
 
 
@@ -42,8 +43,12 @@ void GameApp::Create()
 	mTTFont1->Load("BorisBlackBloxx.ttf", 64);
 
 	mTTFont2 = new JTTFont();			
-	mTTFont2->Load(mTTFont1, 20);		// create the 2nd font using font info and data from the 1st one, but with a different size.
+	mTTFont2->Load(mTTFont1, 20);		// Create the 2nd font using font info and data from the 1st one, but with a different size.
 
+	mTTFSmall = new JTTFont(JTTFont::CACHE_IMAGE_512x512);					// We want to cache all the ASCII characters so we specify a large cache image.
+	mTTFSmall->Load("steelfib.ttf", 32, JTTFont::MODE_PRECACHE_ASCII);		// Load font and cache all the ASCII characters at the same time.
+	mTTFSmall->Unload();													// Since we have all the characters we need in the cache, we can delete the 
+																			//	font bitmap to save some memory.
 
 }
 
@@ -51,11 +56,9 @@ void GameApp::Create()
 void GameApp::Destroy()
 {
 
-	if (mTTFont1)
-		delete mTTFont1;
-
-	if (mTTFont2)
-		delete mTTFont2;
+	SAFE_DELETE(mTTFont1);
+	SAFE_DELETE(mTTFont2);
+	SAFE_DELETE(mTTFSmall);
 
 }
 
@@ -90,9 +93,23 @@ void GameApp::Render()
 	
 	renderer->ClearScreen(ARGB(0,0,0,0));
 
-	mTTFont1->RenderString("Size 32", 10, 10);
+	mTTFont1->SetColor(ARGB(255,255,255,255));
+	mTTFont1->RenderString("Hello(Size 64)", 10, 10);
 
-	mTTFont2->RenderString("Size 12", 10, 80);
+	mTTFont2->SetColor(ARGB(255,255,255,255));
+	mTTFont2->RenderString("G'day ! (Size 20)", 10, 96);
+
+	mTTFont2->SetColor(ARGB(255,255,0,0));
+	mTTFont2->RenderString("I am HOT!", 310, 100);
+
+	mTTFSmall->SetColor(ARGB(255,255,64,255));
+	mTTFSmall->RenderString("She sells sea shells on the seashore. (Size 32)", 10, 200);
+
+	mTTFont1->SetColor(ARGB(192,0,0,255));
+	mTTFont1->RenderString("SO COOL!", 50, 120);
+
+	mTTFont1->SetColor(ARGB(96,0,128,0));
+	mTTFont1->RenderString("SO COOL!", 55, 125);
 
 }
 

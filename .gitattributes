@@ -684,6 +684,7 @@ JGE/Tutorials/06.TrueTypeFont/bin/fmod.dll -text
 JGE/Tutorials/06.TrueTypeFont/bin/giflib4.dll -text
 JGE/Tutorials/06.TrueTypeFont/bin/libpng13.dll -text
 JGE/Tutorials/06.TrueTypeFont/bin/zlib1.dll -text
+JGE/Tutorials/06.TrueTypeFont/icon.png -text
 JGE/Tutorials/06.TrueTypeFont/src/GameApp.cpp -text
 JGE/Tutorials/06.TrueTypeFont/src/GameApp.h -text
 JGE/Tutorials/06.TrueTypeFont/src/GameLauncher.cpp -text
@@ -706,6 +707,7 @@ JGE/Tutorials/07.DisplayingChinese/bin/freetype6.dll -text
 JGE/Tutorials/07.DisplayingChinese/bin/giflib4.dll -text
 JGE/Tutorials/07.DisplayingChinese/bin/libpng13.dll -text
 JGE/Tutorials/07.DisplayingChinese/bin/zlib1.dll -text
+JGE/Tutorials/07.DisplayingChinese/icon.png -text
 JGE/Tutorials/07.DisplayingChinese/src/GameApp.cpp -text
 JGE/Tutorials/07.DisplayingChinese/src/GameApp.h -text
 JGE/Tutorials/07.DisplayingChinese/src/GameLauncher.cpp -text
@@ -714,6 +716,8 @@ JGE/Tutorials/08.Animator/Animator.vcproj -text
 JGE/Tutorials/08.Animator/Animator.vcproj.user -text
 JGE/Tutorials/08.Animator/LICENSE -text
 JGE/Tutorials/08.Animator/Makefile -text
+JGE/Tutorials/08.Animator/Makefile.1xx -text
+JGE/Tutorials/08.Animator/Makefile.3xx -text
 JGE/Tutorials/08.Animator/bin/Animator.exe -text
 JGE/Tutorials/08.Animator/bin/Res/animation.res -text
 JGE/Tutorials/08.Animator/bin/Res/bg3.png -text
@@ -724,6 +728,7 @@ JGE/Tutorials/08.Animator/bin/fmod.dll -text
 JGE/Tutorials/08.Animator/bin/giflib4.dll -text
 JGE/Tutorials/08.Animator/bin/libpng13.dll -text
 JGE/Tutorials/08.Animator/bin/zlib1.dll -text
+JGE/Tutorials/08.Animator/icon.png -text
 JGE/Tutorials/08.Animator/src/GameApp.cpp -text
 JGE/Tutorials/08.Animator/src/GameApp.h -text
 JGE/Tutorials/08.Animator/src/GameLauncher.cpp -text
@@ -768,6 +773,7 @@ JGE/Tutorials/10.HGEDistortionMesh/bin/fmod.dll -text
 JGE/Tutorials/10.HGEDistortionMesh/bin/giflib4.dll -text
 JGE/Tutorials/10.HGEDistortionMesh/bin/libpng13.dll -text
 JGE/Tutorials/10.HGEDistortionMesh/bin/zlib1.dll -text
+JGE/Tutorials/10.HGEDistortionMesh/icon.png -text
 JGE/Tutorials/10.HGEDistortionMesh/src/GameApp.cpp -text
 JGE/Tutorials/10.HGEDistortionMesh/src/GameApp.h -text
 JGE/Tutorials/10.HGEDistortionMesh/src/GameLauncher.cpp -text
@@ -800,6 +806,7 @@ JGE/Tutorials/11.HGEParticles/bin/freetype6.dll -text
 JGE/Tutorials/11.HGEParticles/bin/giflib4.dll -text
 JGE/Tutorials/11.HGEParticles/bin/libpng13.dll -text
 JGE/Tutorials/11.HGEParticles/bin/zlib1.dll -text
+JGE/Tutorials/11.HGEParticles/icon.png -text
 JGE/Tutorials/11.HGEParticles/src/GameApp.cpp -text
 JGE/Tutorials/11.HGEParticles/src/GameApp.h -text
 JGE/Tutorials/11.HGEParticles/src/GameLauncher.cpp -text
@@ -818,6 +825,7 @@ JGE/Tutorials/12.InputSystem/bin/freetype6.dll -text
 JGE/Tutorials/12.InputSystem/bin/giflib4.dll -text
 JGE/Tutorials/12.InputSystem/bin/libpng13.dll -text
 JGE/Tutorials/12.InputSystem/bin/zlib1.dll -text
+JGE/Tutorials/12.InputSystem/icon.png -text
 JGE/Tutorials/12.InputSystem/mk1xx.bat -text
 JGE/Tutorials/12.InputSystem/mk3xx.bat -text
 JGE/Tutorials/12.InputSystem/src/GameApp.cpp -text

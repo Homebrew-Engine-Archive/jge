@@ -1,4 +1,4 @@
-TARGET = Demo
+TARGET = TTFDemo
 OBJS = src/GameApp.o src/GameLauncher.o 
 
 CFLAGS = -O2 -G0 -Wall 
@@ -8,10 +8,11 @@ ASFLAGS = $(CXXFLAGS)
 INCDIR = ../../JGE/include ../../JGE/include/psp ../../JGE/include/psp/freetype2 ../../JGE/src
 LIBDIR = ../../JGE/lib/psp
 LDFLAGS =
-LIBS = -ljge100 -lfreetype -ljpeg -lgif -lpng -lz -lm -lmikmod -lpsppower -lpspmpeg -lpspaudiocodec -lpspaudiolib -lpspaudio -lpspgu -lpsprtc -lstdc++ 
+LIBS = -ljge100 -lfreetype -ljpeg -lgif -lpng -lz -lm -lmikmod -lpsppower -lpspmpeg -lpspaudiocodec -lpspaudiolib -lpspaudio -lpspgum -lpspgu -lpsprtc -lstdc++ 
 
 EXTRA_TARGETS = EBOOT.PBP
-PSP_EBOOT_TITLE = JGE++ Demo
+PSP_EBOOT_TITLE = JGE++ TFF Demo
+PSP_EBOOT_ICON = icon.png
 
 PSPSDK=$(shell psp-config --pspsdk-path)
 include $(PSPSDK)/lib/build.mak

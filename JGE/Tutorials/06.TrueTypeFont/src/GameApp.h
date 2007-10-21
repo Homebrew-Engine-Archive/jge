@@ -20,13 +20,11 @@ class GameApp:	public JApp
 {
 
 private:
-	float mAngle;
-	float mScale;
-	float mDelta;
-
 
 	JTTFont* mTTFont1;
 	JTTFont* mTTFont2;
+
+	JTTFont* mTTFSmall;
 
 	
 public:

@@ -1,5 +1,5 @@
 TARGET = InputSystem
-OBJS = src/GameApp.o src/GameLauncher.o 
+OBJS = src/GameApp.o src/GameLauncher.o
 
 BUILD_PRX = 1
 PSP_FW_VERSION=371
@@ -15,6 +15,7 @@ LIBS = -ljge300 -ljinput -lfreetype -ljpeg -lgif -lpng -lz -lm -lmikmod -lpsppow
 
 EXTRA_TARGETS = EBOOT.PBP
 PSP_EBOOT_TITLE = InputSample
+PSP_EBOOT_ICON = icon.png
 
 PSPSDK=$(shell psp-config --pspsdk-path)
 include $(PSPSDK)/lib/build.mak

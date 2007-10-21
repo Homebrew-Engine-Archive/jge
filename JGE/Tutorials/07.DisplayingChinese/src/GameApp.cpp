@@ -39,18 +39,16 @@ GameApp::~GameApp()
 void GameApp::Create()
 {
 
-	mBitmapFont12 = new JGBKFont();
-	mBitmapFont12->Init("ASC12", "GBK12", 12);
-
-	mBitmapFont16 = new JGBKFont();
-	mBitmapFont16->Init("ASC16", "GBK16", 16);
-	
+ 	mBitmapFont12 = new JGBKFont();
+ 	mBitmapFont12->Init("ASC12", "GBK12", 12);		// Load bitmap font.
+ 
+ 	mBitmapFont16 = new JGBKFont();
+ 	mBitmapFont16->Init("ASC16", "GBK16", 16);
 
 	mTTFont = new JTTFont();
-	mTTFont->Load("gkai00mp.ttf", 18);
-	//mTTFont->SetAntialias(false);
+	mTTFont->Load("gkai00mp.ttf", 32);				// Load TTF font.
 
-	mTTFont2 = new JTTFont();
+	mTTFont2 = new JTTFont();						// Create a different size font from the data of another one.
 	mTTFont2->Load(mTTFont, 60);
 
 
@@ -61,17 +59,10 @@ void GameApp::Create()
 void GameApp::Destroy()
 {
 	
-	if (mTTFont)
-		delete mTTFont;
-
-	if (mTTFont2)
-		delete mTTFont2;
-
-	if (mBitmapFont12)
-		delete mBitmapFont12;
-
-	if (mBitmapFont16)
-		delete mBitmapFont16;
+	SAFE_DELETE(mTTFont);
+	SAFE_DELETE(mTTFont2);
+	SAFE_DELETE(mBitmapFont12);
+	SAFE_DELETE(mBitmapFont16);
 
 }
 
@@ -107,15 +98,18 @@ void GameApp::Render()
 	renderer->ClearScreen(ARGB(0,0,0,0));
 
 	
-	u8 text[] = "汉字测试,没有问题!";
-	u8 poem[] = "床前明月光...";
+	u8 text[] = "点阵汉字测试!";
+	u8 poem1[] = "床前明月光, 疑是地上霜.";
+	u8 poem2[] = "举头望明月,";
+	u8 poem3[] = "低头思故乡.";
 
 
-	mBitmapFont12->RenderString(text, 10, 20);
-	mBitmapFont16->RenderString(text, 10, 50);
+ 	mBitmapFont12->RenderString(text, 20, 30);
+ 	mBitmapFont16->RenderString(text, 20, 60);
 	
-	mTTFont->RenderString(poem, 10, 100);
-	mTTFont2->RenderString(poem, 10, 130);
+	mTTFont->RenderString(poem1, 10, 100);
+	mTTFont2->RenderString(poem2, 25, 135);
+	mTTFont2->RenderString(poem3, 55, 195);
 }
 
 

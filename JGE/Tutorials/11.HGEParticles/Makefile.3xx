@@ -15,6 +15,7 @@ LIBS = -lhgetools -ljge300 -lgif -lfreetype -ljpeg -lpng -lz -lm -lmikmod -lpspp
 
 EXTRA_TARGETS = EBOOT.PBP
 PSP_EBOOT_TITLE = HGE Particles Demo
+PSP_EBOOT_ICON = icon.png
 
 PSPSDK=$(shell psp-config --pspsdk-path)
 include $(PSPSDK)/lib/build.mak
