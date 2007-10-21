@@ -5,16 +5,14 @@
 // Licensed under the BSD license, see LICENSE in JGE root for details.
 // 
 // Copyright (c) 2007 James Hui (a.k.a. Dr.Watson) <jhkhui@gmail.com>
-// Copyright (c) 2007 Duan Sijiu (a.k.a. Chi80)
+// Copyright (c) 2007 Sijiu Duan (a.k.a. Chi80) <sijiu49@gmail.com>
 //
-//-------------------------------------------------------------------------------------
-// Special thanks to mimixiku for the idea of removing extra space when rendering 
-// English fonts
 //-------------------------------------------------------------------------------------
 
 #include <stdio.h>
 
 #include "../include/JGBKFont.h"
+#include "../include/JFileSystem.h"
 
 JRenderer* JGBKFont::mRenderer = NULL;
 
@@ -113,34 +111,50 @@ bool JGBKFont::Init(const char* engFileName, const char* chnFileName, int fontsi
 	}
 
 	int size;
-	FILE *f = fopen(engFileName, "rb");
-	if (f == NULL)
+// 	FILE *f = fopen(engFileName, "rb");
+// 	if (f == NULL)
+// 		return false;
+// 
+// 	fseek(f, 0L, SEEK_END);
+// 	size = ftell(f);
+
+	JFileSystem *fileSys = JFileSystem::GetInstance();
+	if (!fileSys->OpenFile(engFileName))
 		return false;
 
-	fseek(f, 0L, SEEK_END);
-	size = ftell(f);
+	size = fileSys->GetFileSize();
 
 	mEngFont = new BYTE[size];
-	fseek(f, 0L, SEEK_SET);
+// 	fseek(f, 0L, SEEK_SET);
+// 
+// 	fread(mEngFont, 1, size, f);
+// 
+// 	fclose(f);
 
-	fread(mEngFont, 1, size, f);
+	fileSys->ReadFile(mEngFont, size);
+	fileSys->CloseFile();
 
-	fclose(f);
+// 	f = fopen(chnFileName, "rb");
+// 	if (f == NULL)
+// 		return false;
+// 
+// 	fseek(f, 0L, SEEK_END);
+// 	int size2 = ftell(f);
 
-
-	f = fopen(chnFileName, "rb");
-	if (f == NULL)
+	if (!fileSys->OpenFile(chnFileName))
 		return false;
 
-	fseek(f, 0L, SEEK_END);
-	int size2 = ftell(f);
+	size = fileSys->GetFileSize();
 
-	mChnFont = new BYTE[size2];
-	fseek(f, 0L, SEEK_SET);
+	mChnFont = new BYTE[size];
+// 	fseek(f, 0L, SEEK_SET);
+// 
+// 	fread(mChnFont, 1, size2, f);
+// 
+// 	fclose(f);
 
-	fread(mChnFont, 1, size2, f);
-
-	fclose(f);
+	fileSys->ReadFile(mChnFont, size);
+	fileSys->CloseFile();
 
 	return true;
 }
@@ -541,13 +555,15 @@ void JGBKFont::RenderString(BYTE* str, float x, float y, int alignment)
 {
 	int w=0;
 	int h=0;
-	GetStringArea(str,w,h);
+	
 	switch(alignment)
 	{
 	case JGETEXT_RIGHT:
+		GetStringArea(str,w,h);
 		x-=w;
 		break;
 	case JGETEXT_CENTER:
+		GetStringArea(str,w,h);
 		x-=w/2;
 		break;
 	case JGETEXT_LEFT:

@@ -203,13 +203,13 @@ bool JTTFont::Load(const char *filename, int size, int mode)
 			if (FT_New_Memory_Face(mLibrary, mFontBits, mFontBitsSize, 0, &mFace ) == 0)
 			{
 				SetSize(size);
+				mFontLoaded = true;
 
 				if (mode == MODE_PRECACHE_ASCII)
-					PreCacheASCII();
+					return PreCacheASCII();
 				else if (mode == MODE_PRECACHE_ASCII_EX)
-					PreCacheExtendedASCII();
+					return PreCacheExtendedASCII();
 
-				mFontLoaded = true;
 
 				return true;
 			}
@@ -225,6 +225,7 @@ void JTTFont::Unload(void)
 {
 	FT_Done_Face(mFace);
 	mFace = 0;
+	mFontLoaded = false;
 
 	if (!mSharingFont)
 	{
@@ -583,38 +584,46 @@ int JTTFont::RenderString(const u8 *text, float x, float y, bool render)
 bool JTTFont::PreCacheASCII()
 {
 	int count = 127-32+1;
-	if (count < mMaxCharCount)
+	if (count > mMaxCharCount)
+		count = mMaxCharCount;
+
 	{
+		int i = 32;
 		mCurr = 0;
-		for (int i=32;i<=127;i++)
+		for (int n=0;n<count;n++)
 		{
 			PreCacheChar(i, i);
+			i++;
 		}
 
 		mASCIIDirectMapping = true;
-		return true;
+		//return true;
 	}
 
-	return false;
+	return true;
 }
 
 
 bool JTTFont::PreCacheExtendedASCII()
 {
 	int count = 255-32+1;
-	if (count < mMaxCharCount)
+	if (count > mMaxCharCount)
+		count =  mMaxCharCount;
+
 	{
+		int i = 32;
 		mCurr = 0;
-		for (int i=32;i<=255;i++)
+		for (int n=0;n<=count;n++)
 		{
 			PreCacheChar(i, i);
+			i++;
 		}
 
 		mASCIIDirectMapping = true;
-		return true;
+		//return true;
 	}
 
-	return false;
+	return true;
 }
 
 

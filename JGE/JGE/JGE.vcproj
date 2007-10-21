@@ -819,6 +819,10 @@
 				>
 			</File>
 		</Filter>
+		<File
+			RelativePath="..\Tutorials\02.RenderingImages\Images.sln"
+			>
+		</File>
 	</Files>
 	<Globals>
 	</Globals>
