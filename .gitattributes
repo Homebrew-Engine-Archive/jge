@@ -689,7 +689,6 @@ JGE/Tutorials/06.TrueTypeFont/TrueTypeFont.vcproj.user -text
 JGE/Tutorials/06.TrueTypeFont/bin/Res/BorisBlackBloxx.ttf -text
 JGE/Tutorials/06.TrueTypeFont/bin/Res/steelfib.ttf -text
 JGE/Tutorials/06.TrueTypeFont/bin/TrueTypeFont.exe -text
-JGE/Tutorials/06.TrueTypeFont/bin/TrueTypeFont_debug.exe -text
 JGE/Tutorials/06.TrueTypeFont/bin/fmod.dll -text
 JGE/Tutorials/06.TrueTypeFont/bin/giflib4.dll -text
 JGE/Tutorials/06.TrueTypeFont/bin/libpng13.dll -text
@@ -706,7 +705,6 @@ JGE/Tutorials/07.DisplayingChinese/Makefile -text
 JGE/Tutorials/07.DisplayingChinese/Makefile.1xx -text
 JGE/Tutorials/07.DisplayingChinese/Makefile.3xx -text
 JGE/Tutorials/07.DisplayingChinese/bin/DisplayingChinese.exe -text
-JGE/Tutorials/07.DisplayingChinese/bin/DisplayingChinese_debug.exe -text
 JGE/Tutorials/07.DisplayingChinese/bin/Res/ASC12 -text
 JGE/Tutorials/07.DisplayingChinese/bin/Res/ASC16 -text
 JGE/Tutorials/07.DisplayingChinese/bin/Res/GBK12 -text
@@ -839,3 +837,4 @@ JGE/Tutorials/12.InputSystem/mk3xx.bat -text
 JGE/Tutorials/12.InputSystem/src/GameApp.cpp -text
 JGE/Tutorials/12.InputSystem/src/GameApp.h -text
 JGE/Tutorials/12.InputSystem/src/GameLauncher.cpp -text
+JGE/Tutorials/readme.txt -text
