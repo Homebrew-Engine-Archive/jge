@@ -239,10 +239,6 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="src\GameApp.h"
-				>
-			</File>
-			<File
 				RelativePath="src\GameLauncher.cpp"
 				>
 				<FileConfiguration
@@ -280,15 +276,15 @@
 				RelativePath=".\Makefile.3xx"
 				>
 			</File>
-			<File
-				RelativePath="mk.bat"
-				>
-			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
 			Filter="h;hpp;hxx;hm;inl"
 			>
+			<File
+				RelativePath="src\GameApp.h"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Resource Files"

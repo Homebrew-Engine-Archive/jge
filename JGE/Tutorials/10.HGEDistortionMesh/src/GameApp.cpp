@@ -8,7 +8,8 @@
 // 
 //-------------------------------------------------------------------------------------
 //
-// Adapted from "tutorial05" of HGE
+// Adapted from "tutorial05" of HGE. To use HGE's hepler classes, you need to include
+// libhgetools in the PSP makefile.
 //
 //-------------------------------------------------------------------------------------
 

@@ -8,7 +8,8 @@
 // 
 //-------------------------------------------------------------------------------------
 //
-// Adapted from HGE's tutorial03
+// Adapted from HGE's tutorial03. To use HGE's helper classes, you need to include
+// libhgetools in the PSP makefile.
 //
 //-------------------------------------------------------------------------------------
 
@@ -108,7 +109,8 @@ void GameApp::Create()
 	JSoundSystem* sound = JSoundSystem::GetInstance();
 
 	if (sound)
- 		mMusic = sound->LoadMusic("12thWarrior.mp3");
+ 		mMusic = sound->LoadMusic("12thWarrior.mp3");	// Load a background music.
+
  	if (mMusic)
  		JSoundSystem::GetInstance()->PlayMusic(mMusic, true);
 }
@@ -187,6 +189,7 @@ void GameApp::Update()
 		7, 15, 0, 5, 7, 0, 1, 15, 4
 	};
 
+	// change particle image if PSP_CTRL_LEFT or PSP_CTRL_RIGHT is down
 	if (engine->GetButtonClick(PSP_CTRL_LEFT))
 	{
 		mCurrParticle--;
@@ -205,6 +208,8 @@ void GameApp::Update()
 		mParticleSys->info.sprite = mParticles[mCurrParticle];
 		mMovingParticleSys->info.sprite = mParticles[15-mCurrParticle];
 	}
+
+	// change particle system if PSP_CTRL_DOWN or PSP_CTRL_UP is down
 	if (engine->GetButtonClick(PSP_CTRL_DOWN))
 	{
 		mCurrParticleSys--;

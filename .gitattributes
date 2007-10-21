@@ -762,8 +762,6 @@ JGE/Tutorials/10.HGEDistortionMesh/Makefile -text
 JGE/Tutorials/10.HGEDistortionMesh/Makefile.1xx -text
 JGE/Tutorials/10.HGEDistortionMesh/Makefile.3xx -text
 JGE/Tutorials/10.HGEDistortionMesh/bin/HGEDistortionMesh.exe -text
-JGE/Tutorials/10.HGEDistortionMesh/bin/Res/3.png -text
-JGE/Tutorials/10.HGEDistortionMesh/bin/Res/6_0.png -text
 JGE/Tutorials/10.HGEDistortionMesh/bin/Res/font1.fnt -text
 JGE/Tutorials/10.HGEDistortionMesh/bin/Res/font1.png -text
 JGE/Tutorials/10.HGEDistortionMesh/bin/Res/font2.fnt -text

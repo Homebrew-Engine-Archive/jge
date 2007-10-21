@@ -104,8 +104,8 @@ void GameApp::Render()
 	u8 poem3[] = "µÍÍ·Ë¼¹ÊÏç.";
 
 
- 	mBitmapFont12->RenderString(text, 20, 30);
- 	mBitmapFont16->RenderString(text, 20, 60);
+ 	mBitmapFont12->RenderString(text, SCREEN_WIDTH_F/2, 30, JGETEXT_CENTER);
+ 	mBitmapFont16->RenderString(text, SCREEN_WIDTH_F, 60, JGETEXT_RIGHT);
 	
 	mTTFont->RenderString(poem1, 10, 100);
 	mTTFont2->RenderString(poem2, 25, 135);
