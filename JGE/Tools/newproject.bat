@@ -1,8 +1,5 @@
 @echo off
-
-IF %1 == "" GOTO ERROR
-
-IF %2 == "" GOTO ERROR
+echo usage: newproject project_name project_description
 
 mkdir ..\Projects\%1
 xcopy template ..\Projects\%1 /e /y
@@ -17,9 +14,3 @@ rename ..\Projects\%1\template.sln %1.sln
 rename ..\Projects\%1\template.vcproj %1.vcproj
 rename ..\Projects\%1\template.vcproj.user %1.vcproj.user
 
-GOTO DONE
-
-:ERROR
-echo usage: newproject project_name project_description
-
-:DONE
