@@ -50,15 +50,6 @@ public:
 
 
 	//////////////////////////////////////////////////////////////////////////
-	/// Get the singleton instance
-	///
-	//////////////////////////////////////////////////////////////////////////
-	//static JParticleSystem* GetInstance();
-
-	//void Destroy();
-
-
-	//////////////////////////////////////////////////////////////////////////
 	/// Update all active effects.
 	/// 
 	/// @param dt - Delta time since last update (in second).
@@ -114,8 +105,6 @@ private:
 	bool mActive;
 
 	list<JParticleEffect*> mEffects;
-
-	//static JParticleSystem* mInstance;
 
 
 };
