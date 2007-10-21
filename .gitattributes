@@ -665,7 +665,7 @@ JGE/Tutorials/05.Shapes/bin/freetype6.dll -text
 JGE/Tutorials/05.Shapes/bin/giflib4.dll -text
 JGE/Tutorials/05.Shapes/bin/libpng13.dll -text
 JGE/Tutorials/05.Shapes/bin/zlib1.dll -text
-JGE/Tutorials/05.Shapes/mk.bat -text
+JGE/Tutorials/05.Shapes/icon.png -text
 JGE/Tutorials/05.Shapes/src/GameApp.cpp -text
 JGE/Tutorials/05.Shapes/src/GameApp.h -text
 JGE/Tutorials/05.Shapes/src/GameLauncher.cpp -text
