@@ -28,7 +28,7 @@ public:
 
 private:
 	float mAngle;
-	int mCount;
+
 };
 
 #endif

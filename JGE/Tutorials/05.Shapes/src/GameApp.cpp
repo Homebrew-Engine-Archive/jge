@@ -26,8 +26,6 @@ GameApp::GameApp()
 {
 	mAngle = 0.0f;
 
-	mCount = 2;
-
 }
 
 
@@ -93,10 +91,6 @@ void GameApp::Update()
 
 	float dt = engine->GetDelta();		// Get time elapsed since last update.
 
-	//
-	// Your updating code here...
-	//
-
 	mAngle += 2.0f*dt;
 	if (mAngle >= M_PI*2)
 		mAngle = 0;
@@ -116,10 +110,6 @@ void GameApp::Render()
 	// clear screen to black
 	renderer->ClearScreen(ARGB(0,0,0,0));
 
-	//
-	// Your rendering code here...
-	//
-
 	float xList[] =
 	{
 		10, 100, 120, 80, 50, 10
@@ -130,20 +120,17 @@ void GameApp::Render()
 		100, 100, 60, 30, 10, 10
 	};
 
-	renderer->DrawPolygon(xList, yList, 6, ARGB(255,0,0,255));
+	renderer->DrawPolygon(xList, yList, 6, ARGB(255,0,0,255));				// Draw polygon with 6 vertices.
 
-	renderer->DrawLine(50, 50, 400, 200, 5, ARGB(255,255,0,0));
+	renderer->DrawLine(120, 100, 320, 250, 5, ARGB(255,255,0,0));				
 
-	for (int i=0;i<mCount;i++)
-		renderer->DrawCircle(20+i*40,180,18,ARGB(255,0,255,0));
+	renderer->FillCircle(400, 180, 50, ARGB(255,123,60,200));
 
-	renderer->FillCircle(300,120,50,ARGB(255,123,60,200));
-
- 	renderer->DrawPolygon(230, 170, 40, 4, mAngle, ARGB(255,0,0,255));
+ 	renderer->DrawPolygon(180, 200, 40, 4, mAngle, ARGB(255,0,0,255));		// Draw a symmetric polygon with 4 sides.
  
- 	renderer->FillPolygon(150, 180, 80, 6, mAngle, ARGB(255,0,0,255));
+ 	renderer->FillPolygon(80, 200, 80, 6, mAngle, ARGB(255,0,0,255));		// Draw a symmetric polygon with 6 sides.
 
-	renderer->DrawRect(280, 120, 20, 20, ARGB(255,255,255,255));
+	renderer->DrawRect(250, 100, 40, 60, ARGB(255,255,255,255));
 
 	renderer->DrawRoundRect(340, 30, 30, 20, 5, ARGB(255,255,255,255));
 
@@ -160,7 +147,6 @@ void GameApp::Render()
 void GameApp::Pause()
 {
 
-	mCount++;
 }
 
 
@@ -170,6 +156,5 @@ void GameApp::Pause()
 //-------------------------------------------------------------------------------------
 void GameApp::Resume()
 {
-	mCount++;
 	
 }
