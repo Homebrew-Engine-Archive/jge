@@ -94,7 +94,6 @@ bool JGBKFont::Init(const char* engFileName, const char* chnFileName, int fontsi
 #endif
 
 	mTexture = mRenderer->CreateTexture(mCacheImageWidth, mCacheImageHeight, true);
-	//mTexture->mFilter = TEX_FILTER_NEAREST;
 
 	int index = 0;
 	for (int y=0;y<mRow;y++)
@@ -111,35 +110,17 @@ bool JGBKFont::Init(const char* engFileName, const char* chnFileName, int fontsi
 	}
 
 	int size;
-// 	FILE *f = fopen(engFileName, "rb");
-// 	if (f == NULL)
-// 		return false;
-// 
-// 	fseek(f, 0L, SEEK_END);
-// 	size = ftell(f);
 
 	JFileSystem *fileSys = JFileSystem::GetInstance();
 	if (!fileSys->OpenFile(engFileName))
 		return false;
 
 	size = fileSys->GetFileSize();
-
 	mEngFont = new BYTE[size];
-// 	fseek(f, 0L, SEEK_SET);
-// 
-// 	fread(mEngFont, 1, size, f);
-// 
-// 	fclose(f);
 
 	fileSys->ReadFile(mEngFont, size);
 	fileSys->CloseFile();
 
-// 	f = fopen(chnFileName, "rb");
-// 	if (f == NULL)
-// 		return false;
-// 
-// 	fseek(f, 0L, SEEK_END);
-// 	int size2 = ftell(f);
 
 	if (!fileSys->OpenFile(chnFileName))
 		return false;
@@ -147,11 +128,6 @@ bool JGBKFont::Init(const char* engFileName, const char* chnFileName, int fontsi
 	size = fileSys->GetFileSize();
 
 	mChnFont = new BYTE[size];
-// 	fseek(f, 0L, SEEK_SET);
-// 
-// 	fread(mChnFont, 1, size2, f);
-// 
-// 	fclose(f);
 
 	fileSys->ReadFile(mChnFont, size);
 	fileSys->CloseFile();
@@ -431,7 +407,7 @@ int JGBKFont::GetStringWidth( BYTE* str )
 {
 	int w=0;
 	int h=0;
-	GetStringArea(str,w,h);
+	GetStringArea(str, &w, &h);
 	return w;
 }
 
@@ -439,10 +415,10 @@ int JGBKFont::GetStringHeight( BYTE* str )
 {
 	int w=0;
 	int h=0;
-	GetStringArea(str,w,h);
+	GetStringArea(str, &w, &h);
 	return h;
 }
-void JGBKFont::GetStringArea( BYTE* str,  int&w, int&h)
+void JGBKFont::GetStringArea( BYTE* str,  int *w, int *h)
 {
 	BYTE* src = str;
 	float len= 0;
@@ -452,7 +428,7 @@ void JGBKFont::GetStringArea( BYTE* str,  int&w, int&h)
 
 	while (*src != 0)
 	{
-		if (yy + mFontSize < 0.0f)	// don't render when outside viewport
+		if (yy + mFontSize < 0.0f)		// don't render when outside viewport
 		{
 			if (*src < ' ')				// control characters
 			{
@@ -517,15 +493,12 @@ void JGBKFont::GetStringArea( BYTE* str,  int&w, int&h)
 				}
 				else if (*src >= ' ')
 				{
-					//index = PreCacheChar(src);
 					src += 1;
 					if(isChinese==true)
 						xx-=3*(mFontSize*mScale)/16;
 					isChinese = false;
 				}
 
-				//mSprites[index]->SetColor(mColor);
-				//mRenderer->RenderQuad(mSprites[index], xx, yy, mRotation, mScale, mScale);
 				if (mSmallEnglishFont && !isChinese)
 					xx += (mFontSize*mScale)/2;
 				else
@@ -546,9 +519,9 @@ void JGBKFont::GetStringArea( BYTE* str,  int&w, int&h)
 	{
 		len=xx;
 	}
-	w=len;
-	h=yy;
-	return;
+	*w=(int)len;
+	*h=(int)yy;
+
 }
 
 void JGBKFont::RenderString(BYTE* str, float x, float y, int alignment)
@@ -559,11 +532,11 @@ void JGBKFont::RenderString(BYTE* str, float x, float y, int alignment)
 	switch(alignment)
 	{
 	case JGETEXT_RIGHT:
-		GetStringArea(str,w,h);
+		GetStringArea(str,&w,&h);
 		x-=w;
 		break;
 	case JGETEXT_CENTER:
-		GetStringArea(str,w,h);
+		GetStringArea(str,&w,&h);
 		x-=w/2;
 		break;
 	case JGETEXT_LEFT:
@@ -583,7 +556,7 @@ void JGBKFont::RenderString(BYTE* str, float x, float y, int alignment)
 	
 	while (*src != 0)
 	{
-		if (yy + mFontSize < 0.0f)	// don't render when outside viewport
+		if (yy + mFontSize < 0.0f)		// don't render when outside viewport
 		{
 			if (*src < ' ')				// control characters
 			{
@@ -671,6 +644,4 @@ void JGBKFont::SetScale(float scale) { mScale = scale; }
 void JGBKFont::SetRotation(float rot) { mRotation = rot; }
 void JGBKFont::SetColor(PIXEL_TYPE color) { mColor = color; }
 void JGBKFont::SetBgColor(PIXEL_TYPE color) { mBgColor = color; }
-
-
 

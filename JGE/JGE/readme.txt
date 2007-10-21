@@ -14,6 +14,7 @@ Features
     * Geometry shapes rendering, including rectangle, circle, polygons and thick lines.
     * Loading PNG, JPEG and GIF.
     * Spline.
+    * Advanced multiple emitter and key frame based particle system.
     * Bitmap fonts.
     * Chinese GBK fonts.
     * True Type fonts.
@@ -24,7 +25,7 @@ Features
     * Frame based animation system using XML scripts.
     * Basic 3D functions, including support of rendering textured triangles, Quake 2 (MD2) model and OBJ model.
     * Port of HGE helper classes: hgeParticleSystem, hgeDistortionMesh and hgeFont.
-    * Input helper class for both English and Chinese.
+    * Input system for English and Chinese.
 
 
 
@@ -36,7 +37,7 @@ http://jge.googlecode.com/
 
 Official forums:
 ----------------
-http://jge.khors.com/index.php
+http://jge.khors.com/
 
 
 

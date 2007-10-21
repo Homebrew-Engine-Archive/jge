@@ -39,7 +39,7 @@ JInputSystem::JInputSystem(void)
 	mIsInputActive=false;
 	mBitmapFont12 = NULL;
 	mBitmapFont12 = new JGBKFont();
-	mBitmapFont12->Init("Res/ASC12", "Res/GBK12", 12,true);
+	mBitmapFont12->Init("ASC12", "GBK12", 12,true);
 
 	mTimer=0.0f;
 	mInPut[0]=0;
