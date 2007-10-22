@@ -482,6 +482,7 @@ JGE/JGE/lib/win/jge.lib -text
 JGE/JGE/lib/win/jge_debug.lib -text
 JGE/JGE/mk1xx.bat -text
 JGE/JGE/mk3xx.bat -text
+JGE/JGE/note.txt -text
 JGE/JGE/readme.txt -text
 JGE/JGE/src/Encoding.cpp -text
 JGE/JGE/src/JAnimator.cpp -text
