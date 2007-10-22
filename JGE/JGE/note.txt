@@ -5,8 +5,7 @@
     ///////////////////////////////////
     / Newly added highlight features  /
     ///////////////////////////////////
-    - Add TextureLoadingCallBack mechanism. Users could register callback 
-      functions for Textrue Loading.
+    - 
 
     ///////////////////////////////////////
     / Improvements & Resolved Issues Bugs /
