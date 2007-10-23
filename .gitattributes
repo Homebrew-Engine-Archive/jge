@@ -603,6 +603,7 @@ JGE/Tutorials/01.HelloWorld/bin/giflib4.dll -text
 JGE/Tutorials/01.HelloWorld/bin/libpng13.dll -text
 JGE/Tutorials/01.HelloWorld/bin/zlib1.dll -text
 JGE/Tutorials/01.HelloWorld/icon.png -text
+JGE/Tutorials/01.HelloWorld/screenshot.png -text
 JGE/Tutorials/01.HelloWorld/src/GameApp.cpp -text
 JGE/Tutorials/01.HelloWorld/src/GameApp.h -text
 JGE/Tutorials/01.HelloWorld/src/GameLauncher.cpp -text
@@ -621,6 +622,7 @@ JGE/Tutorials/02.RenderingImages/bin/giflib4.dll -text
 JGE/Tutorials/02.RenderingImages/bin/libpng13.dll -text
 JGE/Tutorials/02.RenderingImages/bin/zlib1.dll -text
 JGE/Tutorials/02.RenderingImages/icon.png -text
+JGE/Tutorials/02.RenderingImages/screenshot.png -text
 JGE/Tutorials/02.RenderingImages/src/GameApp.cpp -text
 JGE/Tutorials/02.RenderingImages/src/GameApp.h -text
 JGE/Tutorials/02.RenderingImages/src/GameLauncher.cpp -text
@@ -640,6 +642,7 @@ JGE/Tutorials/03.ResourceManager/bin/giflib4.dll -text
 JGE/Tutorials/03.ResourceManager/bin/libpng13.dll -text
 JGE/Tutorials/03.ResourceManager/bin/zlib1.dll -text
 JGE/Tutorials/03.ResourceManager/icon.png -text
+JGE/Tutorials/03.ResourceManager/screenshot.png -text
 JGE/Tutorials/03.ResourceManager/src/GameApp.cpp -text
 JGE/Tutorials/03.ResourceManager/src/GameApp.h -text
 JGE/Tutorials/03.ResourceManager/src/GameLauncher.cpp -text
@@ -661,6 +664,7 @@ JGE/Tutorials/04.Splines/bin/giflib4.dll -text
 JGE/Tutorials/04.Splines/bin/libpng13.dll -text
 JGE/Tutorials/04.Splines/bin/zlib1.dll -text
 JGE/Tutorials/04.Splines/icon.png -text
+JGE/Tutorials/04.Splines/screenshot.png -text
 JGE/Tutorials/04.Splines/src/GameApp.cpp -text
 JGE/Tutorials/04.Splines/src/GameApp.h -text
 JGE/Tutorials/04.Splines/src/GameLauncher.cpp -text
@@ -677,6 +681,7 @@ JGE/Tutorials/05.Shapes/bin/giflib4.dll -text
 JGE/Tutorials/05.Shapes/bin/libpng13.dll -text
 JGE/Tutorials/05.Shapes/bin/zlib1.dll -text
 JGE/Tutorials/05.Shapes/icon.png -text
+JGE/Tutorials/05.Shapes/screenshot.png -text
 JGE/Tutorials/05.Shapes/src/GameApp.cpp -text
 JGE/Tutorials/05.Shapes/src/GameApp.h -text
 JGE/Tutorials/05.Shapes/src/GameLauncher.cpp -text
@@ -738,6 +743,7 @@ JGE/Tutorials/08.Animator/bin/giflib4.dll -text
 JGE/Tutorials/08.Animator/bin/libpng13.dll -text
 JGE/Tutorials/08.Animator/bin/zlib1.dll -text
 JGE/Tutorials/08.Animator/icon.png -text
+JGE/Tutorials/08.Animator/screenshot.png -text
 JGE/Tutorials/08.Animator/src/GameApp.cpp -text
 JGE/Tutorials/08.Animator/src/GameApp.h -text
 JGE/Tutorials/08.Animator/src/GameLauncher.cpp -text
@@ -760,6 +766,7 @@ JGE/Tutorials/09.3DPrimer/bin/giflib4.dll -text
 JGE/Tutorials/09.3DPrimer/bin/libpng13.dll -text
 JGE/Tutorials/09.3DPrimer/bin/zlib1.dll -text
 JGE/Tutorials/09.3DPrimer/icon.png -text
+JGE/Tutorials/09.3DPrimer/screenshot.png -text
 JGE/Tutorials/09.3DPrimer/src/GameApp.cpp -text
 JGE/Tutorials/09.3DPrimer/src/GameApp.h -text
 JGE/Tutorials/09.3DPrimer/src/GameLauncher.cpp -text
@@ -781,6 +788,7 @@ JGE/Tutorials/10.HGEDistortionMesh/bin/giflib4.dll -text
 JGE/Tutorials/10.HGEDistortionMesh/bin/libpng13.dll -text
 JGE/Tutorials/10.HGEDistortionMesh/bin/zlib1.dll -text
 JGE/Tutorials/10.HGEDistortionMesh/icon.png -text
+JGE/Tutorials/10.HGEDistortionMesh/screenshot.png -text
 JGE/Tutorials/10.HGEDistortionMesh/src/GameApp.cpp -text
 JGE/Tutorials/10.HGEDistortionMesh/src/GameApp.h -text
 JGE/Tutorials/10.HGEDistortionMesh/src/GameLauncher.cpp -text
@@ -814,6 +822,7 @@ JGE/Tutorials/11.HGEParticles/bin/giflib4.dll -text
 JGE/Tutorials/11.HGEParticles/bin/libpng13.dll -text
 JGE/Tutorials/11.HGEParticles/bin/zlib1.dll -text
 JGE/Tutorials/11.HGEParticles/icon.png -text
+JGE/Tutorials/11.HGEParticles/screenshot.png -text
 JGE/Tutorials/11.HGEParticles/src/GameApp.cpp -text
 JGE/Tutorials/11.HGEParticles/src/GameApp.h -text
 JGE/Tutorials/11.HGEParticles/src/GameLauncher.cpp -text
@@ -835,6 +844,7 @@ JGE/Tutorials/12.InputSystem/bin/zlib1.dll -text
 JGE/Tutorials/12.InputSystem/icon.png -text
 JGE/Tutorials/12.InputSystem/mk1xx.bat -text
 JGE/Tutorials/12.InputSystem/mk3xx.bat -text
+JGE/Tutorials/12.InputSystem/screenshot.png -text
 JGE/Tutorials/12.InputSystem/src/GameApp.cpp -text
 JGE/Tutorials/12.InputSystem/src/GameApp.h -text
 JGE/Tutorials/12.InputSystem/src/GameLauncher.cpp -text
