@@ -696,6 +696,7 @@ JGE/Tutorials/06.TrueTypeFont/bin/Res/BorisBlackBloxx.ttf -text
 JGE/Tutorials/06.TrueTypeFont/bin/Res/steelfib.ttf -text
 JGE/Tutorials/06.TrueTypeFont/bin/TrueTypeFont.exe -text
 JGE/Tutorials/06.TrueTypeFont/bin/fmod.dll -text
+JGE/Tutorials/06.TrueTypeFont/bin/freetype6.dll -text
 JGE/Tutorials/06.TrueTypeFont/bin/giflib4.dll -text
 JGE/Tutorials/06.TrueTypeFont/bin/libpng13.dll -text
 JGE/Tutorials/06.TrueTypeFont/bin/zlib1.dll -text
