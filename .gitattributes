@@ -202,7 +202,17 @@ JGE/JGE/Makefile.3xx -text
 JGE/JGE/Makefile.box2d -text
 JGE/JGE/Makefile.hge -text
 JGE/JGE/Makefile.input -text
+JGE/JGE/box2d/Documentation/images/bodyOrigin.gif -text
+JGE/JGE/box2d/Documentation/images/distanceJoint.gif -text
+JGE/JGE/box2d/Documentation/images/gearJoint.gif -text
+JGE/JGE/box2d/Documentation/images/prismaticJoint.gif -text
+JGE/JGE/box2d/Documentation/images/pulleyJoint.gif -text
+JGE/JGE/box2d/Documentation/images/revoluteJoint.gif -text
+JGE/JGE/box2d/Documentation/manual.css -text
+JGE/JGE/box2d/Documentation/manual.html -text
 JGE/JGE/box2d/Include/Box2D.h -text
+JGE/JGE/box2d/License.txt -text
+JGE/JGE/box2d/Readme.txt -text
 JGE/JGE/box2d/Source/Collision/b2BroadPhase.cpp -text
 JGE/JGE/box2d/Source/Collision/b2BroadPhase.h -text
 JGE/JGE/box2d/Source/Collision/b2CollideCircle.cpp -text
