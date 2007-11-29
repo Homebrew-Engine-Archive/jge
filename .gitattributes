@@ -652,7 +652,6 @@ JGE/JGE/include/unzip/mztools.h -text
 JGE/JGE/include/unzip/unzip.h -text
 JGE/JGE/include/unzip/zip.h -text
 JGE/JGE/include/vram.h -text
-JGE/JGE/lib/psp/libbox2d.a -text
 JGE/JGE/lib/psp/libfreetype.a -text
 JGE/JGE/lib/psp/libgif.a -text
 JGE/JGE/lib/psp/libhgetools.a -text
