@@ -383,7 +383,6 @@ JGE/JGE/LICENSE -text
 JGE/JGE/Makefile -text
 JGE/JGE/Makefile.1xx -text
 JGE/JGE/Makefile.3xx -text
-JGE/JGE/Makefile.box2d -text
 JGE/JGE/Makefile.hge -text
 JGE/JGE/Makefile.input -text
 JGE/JGE/docs/html/annotated.html -text
