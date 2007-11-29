@@ -122,6 +122,9 @@ JGE/JGE/Box2D/Examples/TestBed/Tests/VaryingRestitution.h -text
 JGE/JGE/Box2D/Examples/TestBed/Tests/VerticalStack.h -text
 JGE/JGE/Box2D/Examples/TestBed/Tests/Web.h -text
 JGE/JGE/Box2D/Include/Box2D.h -text
+JGE/JGE/Box2D/Library/box2d.lib -text
+JGE/JGE/Box2D/Library/box2d_d.lib -text
+JGE/JGE/Box2D/Library/libbox2d.a -text
 JGE/JGE/Box2D/License.txt -text
 JGE/JGE/Box2D/Makefile -text
 JGE/JGE/Box2D/Readme.txt -text
