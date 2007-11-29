@@ -48,7 +48,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				InlineFunctionExpansion="1"
-				AdditionalIncludeDirectories="../../JGE/include;../../JGE/Dependencies/include;../../JGE/box2d/Include;"
+				AdditionalIncludeDirectories="../../JGE/include;../../JGE/Dependencies/include;../../JGE/Box2D/Include;"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS"
 				StringPooling="true"
 				RuntimeLibrary="2"
@@ -73,11 +73,11 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="libpng.lib fmodvc.lib zdll.lib jge.lib libjpeg-static-mt.lib freetype.lib"
+				AdditionalDependencies="libpng.lib fmodvc.lib zdll.lib jge.lib libjpeg-static-mt.lib freetype.lib box2d.lib"
 				OutputFile="bin/Box2D.exe"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="..\..\JGE\Dependencies\lib,..\..\JGE\lib\win"
+				AdditionalLibraryDirectories="..\..\JGE\Dependencies\lib,..\..\JGE\lib\win;../../JGE/Box2D/Library;"
 				IgnoreDefaultLibraryNames="LIBCD,LIBCMT"
 				ProgramDatabaseFile=".\Release/Box2D.pdb"
 				SubSystem="2"
@@ -144,7 +144,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="../../JGE/include;../../JGE/Dependencies/include;../../JGE/box2d/Include;"
+				AdditionalIncludeDirectories="../../JGE/include;../../JGE/Dependencies/include;../../JGE/Box2D/Include;"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -170,11 +170,11 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="libpngd.lib fmodvc.lib jge_debug.lib libjpeg-static-mt-debug.lib freetype.lib"
+				AdditionalDependencies="libpngd.lib fmodvc.lib jge_debug.lib libjpeg-static-mt-debug.lib freetype.lib box2d_d.lib"
 				OutputFile="bin/Box2D.exe"
 				LinkIncremental="2"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="..\..\JGE\Dependencies\lib,..\..\JGE\lib\win"
+				AdditionalLibraryDirectories="..\..\JGE\Dependencies\lib,..\..\JGE\lib\win;../../JGE/Box2D/Library;"
 				IgnoreDefaultLibraryNames="LIBCD,LIBC,MSVCRT,LIBCMTD"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile=".\Debug/Box2D.pdb"
